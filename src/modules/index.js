@@ -1,18 +1,10 @@
 import {combineReducers} from 'redux'
-import {reducer as formReducer} from 'redux-form'
+import {createStore} from 'redux'
 
-import {createStore, applyMiddleware, compose} from 'redux'
-import fetchMiddleware from 'fetch-middleware'
+import Github from './Example'
 
-const combineReducer = combineReducers({
-  form: formReducer
+const rootReducer = combineReducers({
+  Github
 })
 
-export default createStore(
-  combineReducer,
-  {},
-  compose(
-    applyMiddleware(fetchMiddleware),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-  )
-)
+export default createStore(rootReducer)

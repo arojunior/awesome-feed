@@ -1,9 +1,9 @@
 export default {
-    path : 'about',
+  path: 'about',
 
-    getComponent(nextState, cb) {
-        require.ensure([], (require) => {
-            cb(null, require('./index').default)
-        })
-    }
+  getComponent(nextState, cb) {
+    require.ensure([], require => {
+      cb(null, require('./index').default)
+    })
+  }
 }

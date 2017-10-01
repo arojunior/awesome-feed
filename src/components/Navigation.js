@@ -10,8 +10,12 @@ const styles = {
 
 const Navigation = () => (
   <nav>
-      <Link to='/' style={ styles.link }>Home</Link>
-      <Link to='/about' style={ styles.link }>About</Link>
+    <Link to="/" style={styles.link}>
+      Home
+    </Link>
+    <Link to="/about" style={styles.link}>
+      About
+    </Link>
   </nav>
 )
 

@@ -7,7 +7,5 @@ export default {
   path: '/',
   component: Layout,
   indexRoute: Home,
-  childRoutes: [
-    About
-  ]
+  childRoutes: [About]
 }

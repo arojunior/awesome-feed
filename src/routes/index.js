@@ -1,5 +1,4 @@
 //import Layout from '../layouts'
-
 import Home from './Home'
 
 export default {

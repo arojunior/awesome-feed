@@ -3,8 +3,6 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, browserHistory } from 'react-router'
 
-import './assets/index.css'
-
 import store from './modules'
 import routes from './routes'
 import registerServiceWorker from './registerServiceWorker'

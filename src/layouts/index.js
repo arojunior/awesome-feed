@@ -1,7 +1,5 @@
 import React from 'react'
-import Navigation from './../components/Navigation'
-
-import '../assets/index.css'
+import Navigation from './../components/Header'
 
 const Layout = ({ children }) => (
   <div>

@@ -1,13 +1,25 @@
-import React from 'react'
+import React, {Component} from 'react'
+import Header from './Header.js'
+import LeftSide from './LeftSide.js'
+import MiddleBody from './MiddleBody.js'
+import RightSide from './RightSide.js'
+import '../../assets/App.css'
 
-const Home = () => {
-  return (
-    <div>
-      Now you are in <code>src/routes/Home/index.js</code>
-    </div>
-  )
-}
 
-export default {
-  component: Home
+export default class App extends Component {
+    render () {
+        return (
+        	<div>
+        		<Header />
+        		<div className="container">
+	        		<div className="row">
+	        			<LeftSide />
+		        		<MiddleBody />
+		        		<RightSide />
+	        		</div>
+        		</div>
+        		
+        	</div>
+        	)
+    }
 }

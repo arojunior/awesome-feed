@@ -8,8 +8,8 @@ const initialState = {
   activity: null
 }
 
-export const getFollowing = createAction(FOLLOWING)
-export const getActivity = createAction(ACTIVITY)
+export const setFollowing = createAction(FOLLOWING)
+export const setActivity = createAction(ACTIVITY)
 
 export default handleActions(
   {

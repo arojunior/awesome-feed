@@ -2635,6 +2635,12 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flux-standard-action@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/flux-standard-action/-/flux-standard-action-0.6.1.tgz#6f34211b94834ea1c3cc30f4e7afad3d0fbf71a2"
+  dependencies:
+    lodash.isplainobject "^3.2.0"
+
 follow-redirects@^1.2.3:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.4.tgz#355e8f4d16876b43f577b0d5ce2668b9723214ea"
@@ -4013,6 +4019,10 @@ lodash-es@^4.17.4, lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
 
+lodash._basefor@^3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/lodash._basefor/-/lodash._basefor-3.0.3.tgz#7550b4e9218ef09fad24343b612021c79b4c20c2"
+
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -4028,6 +4038,29 @@ lodash.cond@^4.3.0:
 lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
+
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+
+lodash.isarray@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isplainobject@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-3.2.0.tgz#9a8238ae16b200432960cd7346512d0123fbf4c5"
+  dependencies:
+    lodash._basefor "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.keysin "^3.0.0"
+
+lodash.keysin@^3.0.0:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.keysin/-/lodash.keysin-3.0.8.tgz#22c4493ebbedb1427962a54b445b2c8a767fb47f"
+  dependencies:
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -5341,6 +5374,16 @@ redux-actions@^2.2.1:
     lodash "^4.13.1"
     lodash-es "^4.17.4"
     reduce-reducers "^0.1.0"
+
+redux-localstore@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/redux-localstore/-/redux-localstore-0.2.1.tgz#1c7a458fcc71513d67260a0de8f19c31cc22b44a"
+
+redux-promise@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/redux-promise/-/redux-promise-0.5.3.tgz#e97e6c9d3bf376eacb79babe6d906da20112d6d8"
+  dependencies:
+    flux-standard-action "^0.6.1"
 
 redux@^3.7.2:
   version "3.7.2"

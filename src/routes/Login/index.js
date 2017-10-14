@@ -24,7 +24,7 @@ export default compose(
   withHandlers({
     setUser: ({ router, dispatch, username }) => e => {
       e.preventDefault()
-      dispatch(setUser({ username }))
+      dispatch(setUser(username))
       router.push(`/${username}`)
     }
   })

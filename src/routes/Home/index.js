@@ -2,7 +2,7 @@ import React from 'react'
 import Header from 'components/Header'
 import LeftSide from './components/LeftSide'
 import RightSide from './components/RightSide'
-import MainFeed from './containers/MainFeed'
+import FeedContainer from './containers/FeedContainer'
 
 import 'assets/App.css'
 
@@ -12,7 +12,7 @@ const Home = () => (
     <div className="container">
       <div className="row">
         <LeftSide />
-        <MainFeed />
+        <FeedContainer />
         <RightSide />
       </div>
     </div>

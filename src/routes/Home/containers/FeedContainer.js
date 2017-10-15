@@ -1,17 +1,22 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose, lifecycle } from 'recompose'
-import MiddleBody from 'routes/Home/components/MiddleBody'
+import FeedComponent from 'routes/Home/components/FeedComponent'
 import { getFollowingUsers } from 'routes/Home/services'
 
-const MainFeed = () => (
-  <div>
-    <MiddleBody />
+const MainFeed = ({ activity }) => (
+  <div className="col-sm-6">
+    <div className="panel panel-info">
+      <div className="panel-body">
+        <FeedComponent activity={activity} />
+      </div>
+    </div>
   </div>
 )
 
 const mapStateToProps = state => ({
-  username: state.Login.profile.login
+  username: state.Login.profile.login,
+  activity: state.Github.activity
 })
 
 export default compose(

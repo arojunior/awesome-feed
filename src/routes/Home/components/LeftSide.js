@@ -1,39 +1,9 @@
 import React from 'react'
+import ProfileContainer from 'routes/Home/containers/ProfileContainer'
 
 const LeftSide = () => (
   <div className="col-sm-3">
-    <div className="panel panel-default">
-      <div className="panel-body">
-        <a href="">
-          <img
-            className="img-responsive"
-            alt=""
-            src="http://placehold.it/800x500"
-          />
-        </a>
-        <div className="row">
-          <div className="col-xs-3">
-            <h5>
-              <small>STARRED</small> <br />
-              <a href="">1,545</a>
-            </h5>
-          </div>
-          <div className="col-xs-4">
-            <h5>
-              <small>FOLLOWING</small> <br />
-              <a href="">251</a>
-            </h5>
-          </div>
-          <div className="col-xs-5">
-            <h5>
-              <small>FOLLOWERS</small> <br />
-              <a href="">153</a>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <ProfileContainer />
     <div className="panel panel-default panel-custom">
       <div className="panel-heading">
         <h3 className="panel-title">

@@ -1,15 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { Router, browserHistory } from 'react-router'
 
 import store from './modules'
-import routes from './routes'
+import Home from './routes/Home'
 import registerServiceWorker from './registerServiceWorker'
 
 render(
   <Provider store={store}>
-    <Router history={browserHistory} routes={routes} />
+    <Home />
   </Provider>,
   document.getElementById('root')
 )

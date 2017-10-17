@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { flatten } from 'ramda'
 import { setFollowing, setActivity } from 'modules/Github'
 import { API } from '../../../constants'
 
@@ -9,11 +10,8 @@ export const getEventsFromFollowing = ({ following, dispatch }) => {
 
   return axios.all(requests).then(
     axios.spread((...args) => {
-      const events = []
-      for (let i = 0; i < args.length; i++) {
-        events.concat(args[i].data)
-      }
-      dispatch(setActivity(events))
+      const events = args.map(events => events.data)
+      dispatch(setActivity(flatten(events)))
     })
   )
 }

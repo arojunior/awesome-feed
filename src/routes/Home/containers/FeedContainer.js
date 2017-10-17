@@ -1,6 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { compose, lifecycle } from 'recompose'
+import {
+  compose,
+  lifecycle,
+  branch,
+  renderComponent,
+  renderNothing
+} from 'recompose'
 import FeedComponent from 'routes/Home/components/FeedComponent'
 import { getFollowingUsers } from 'routes/Home/services'
 
@@ -31,8 +37,9 @@ export default compose(
     componentWillReceiveProps(nextProps) {
       const { username, dispatch } = this.props
       if (username !== nextProps.username) {
-        getFollowingUsers({ username, dispatch })
+        getFollowingUsers({ username: nextProps.username, dispatch })
       }
     }
-  })
+  }),
+  branch(props => !props.activity, renderComponent(renderNothing()))
 )(MainFeed)

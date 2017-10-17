@@ -32,7 +32,8 @@ const MiddleBody = ({ activity }) => {
 
   const rowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
     const card = sortedByLast[index]
-    return (
+
+    return card ? (
       <div className="media" key={key}>
         <a
           className="media-left"
@@ -83,7 +84,7 @@ const MiddleBody = ({ activity }) => {
           </ul>
         </div>
       </div>
-    )
+    ) : null
   }
 
   return (

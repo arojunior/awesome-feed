@@ -9,9 +9,9 @@ import FeedContainer from './containers/FeedContainer'
 
 import 'assets/App.css'
 
-const Home = ({ handleChange, setUser, username }) => (
+const Home = ({ handleChange, setUser }) => (
   <div>
-    <Header handleChange={handleChange} setUser={setUser} username={username} />
+    <Header handleChange={handleChange} setUser={setUser} />
     <div className="container">
       <div className="row">
         <LeftSide />

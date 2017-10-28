@@ -1,0 +1,30 @@
+.search-container input{
+  box-sizing: border-box;
+  padding-right: 44px;
+  background-color: #ffffff;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #3b495e;
+  height: 40px; 
+  outline: 0;
+  border: 1px;
+  border-radius: 2px;
+  box-shadow: inset -1px 0 0 0 #c5d0e1, inset 0 -1px 0 0 #c5d0e1, inset 1px 0 0 0 #c5d0e1, inset 0 2px 0 0 #afcef3;
+  transition: .25s box-shadow;
+}
+
+.search-container input:focus{
+  box-shadow: inset -1px 0 0 0 #c5d0e1, inset 0 -1px 0 0 #c5d0e1, inset 1px 0 0 0 #c5d0e1, inset 0 2px 0 0 #2870b2;
+}
+
+.search-container label {
+  line-height: 1.8rem;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3b495e;
+  margin: 0;
+}

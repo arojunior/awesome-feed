@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose, withState, withHandlers } from 'recompose'
 import Header from 'components/Header'
+import SearchField from 'components/search-field'
 import { setUser } from 'modules/Login'
 import LeftSide from './components/LeftSide'
 import RightSide from './components/RightSide'
@@ -13,6 +14,11 @@ const Home = ({ handleChange, setUser }) => (
   <div>
     <Header handleChange={handleChange} setUser={setUser} />
     <div className="container">
+      <div className='row with-space'>
+        <div className='col-sm-3'>
+          <SearchField name='user' label='Github login' />
+        </div>
+      </div>
       <div className="row">
         <LeftSide />
         <FeedContainer />

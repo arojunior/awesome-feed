@@ -72,5 +72,10 @@ div.panel-heading{
   border:1px lightgrey solid;
 }
 
+.with-space {
+  margin-bottom: 20px;
+}
 
-
+.ignore-input-label{
+  margin-top: 1.8rem
+}

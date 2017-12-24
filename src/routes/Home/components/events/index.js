@@ -1,14 +1,11 @@
 import React from 'react'
-//import { GITHUB } from '../../../../constants'
+import Parser from 'html-react-parser'
 
-export const IssueComment = (payload, repo) => (
+export const IssueComment = payload => (
   <p>
-    <strong>Issue comment:</strong> [<a
-      href={payload.comment.html_url}
-      target="_blank"
-    >
+    <strong>Issue comment:</strong> [<a href={payload.url} target="_blank">
       #{payload.issue.number}
-    </a>] {payload.comment.body}
+    </a>] {Parser(payload.bodyHTML)}
   </p>
 )
 

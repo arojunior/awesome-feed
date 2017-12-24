@@ -1,6 +1,6 @@
 import React from 'react'
-import { sort, descend, prop } from 'ramda'
 import { List } from 'react-virtualized'
+
 import {
   IssueComment,
   WatchEvent,
@@ -9,57 +9,58 @@ import {
   Create
 } from './events'
 import { GITHUB } from '../../../constants'
+import { transformDataForFeed } from 'routes/Home/services/feedActions'
 
-const cardByEvent = (type, payload, repo) => {
+const cardByEvent = (type, card) => {
   switch (type) {
-    case 'IssueCommentEvent':
-      return IssueComment(payload, repo)
+    case 'IssueComment':
+      return IssueComment(card)
     case 'WatchEvent':
       return WatchEvent()
     case 'PushEvent':
-      return PushEvent(payload, repo)
+      return PushEvent(card)
     case 'PullRequestEvent':
-      return PullRequest(payload, repo)
+      return PullRequest(card)
     case 'CreateEvent':
-      return Create(payload, repo)
+      return Create(card)
     default:
       return null
   }
 }
 
 const MiddleBody = ({ activity }) => {
-  const sortedByLast = sort(descend(prop('created_at')))(activity)
-
+  const transformedList = transformDataForFeed(activity)
+  console.log(transformedList)
   const rowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
-    const card = sortedByLast[index]
+    const card = transformedList[index]
 
     return card ? (
       <div className="media" key={key}>
         <a
           className="media-left"
-          href={`${GITHUB}/${card.actor.login}`}
+          href={`${GITHUB}/${card.login}`}
           target="_blank"
         >
           <img
             alt=""
             className="media-object img-rounded"
             height="40px"
-            src={card.actor.avatar_url}
+            src={card.avatarUrl}
           />
         </a>
         <div className="media-body">
           <h4 className="media-heading">
-            {card.actor.display_login}{' '}
+            {card.name}{' '}
             <small>
               in{' '}
-              <a href={`${GITHUB}/${card.repo.name}`} target="_blank">
-                {card.repo.name}
+              <a href="" target="_blank">
+                {(card.repository && card.repository.name) ||
+                  card.nameWithOwner}
               </a>
             </small>
           </h4>
-
-          {cardByEvent(card.type, card.payload, card.repo)}
-          <small>{card.created_at}</small>
+          {cardByEvent(card.__typename, card)}
+          <small>{card.createdAt}</small>
           <ul className="nav nav-pills nav-pills-custom">
             <li>
               <a href="">
@@ -92,7 +93,7 @@ const MiddleBody = ({ activity }) => {
       width={530}
       height={535}
       rowHeight={20}
-      rowCount={sortedByLast.length}
+      rowCount={transformedList.length}
       rowRenderer={rowRenderer}
     />
   )

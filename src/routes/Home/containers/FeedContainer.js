@@ -1,45 +1,17 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import {
-  compose,
-  lifecycle,
-  branch,
-  renderComponent,
-  renderNothing
-} from 'recompose'
-import FeedComponent from 'routes/Home/components/FeedComponent'
-import { getFollowingUsers } from 'routes/Home/services'
-
-const MainFeed = ({ activity }) => (
-  <div className="col-sm-6">
-    <div className="panel panel-info">
-      <div className="panel-body">
-        <FeedComponent activity={activity} />
-      </div>
-    </div>
-  </div>
-)
-
-const mapStateToProps = state => ({
-  username: state.Login.profile.login,
-  activity: state.Github.activity
-})
+import { compose, branch, renderComponent, renderNothing } from 'recompose'
+import { graphql } from 'react-apollo'
+import { getGithubActivity } from 'services/graphQLQuery'
+import MainFeedComponent from 'routes/Home/components/MainFeedComponent'
 
 export default compose(
-  connect(mapStateToProps),
-  lifecycle({
-    componentDidMount() {
-      const { username, dispatch } = this.props
-      if (username) {
-        getFollowingUsers({ username, dispatch })
+  graphql(getGithubActivity, {
+    name: 'activity',
+    props: ({ activity }) => {
+      if (!activity.loading) {
+        console.log(`activity`, activity.user.following)
       }
-    },
-    componentWillReceiveProps(nextProps) {
-      const { username, dispatch } = this.props
-      if (username !== nextProps.username) {
-        getFollowingUsers({ username: nextProps.username, dispatch })
-      }
+      return { activity }
     }
   }),
-  branch(props => !props.activity, renderComponent(renderNothing()))
-)(MainFeed)
+  branch(({ activity }) => activity.loading, renderComponent(renderNothing()))
+)(MainFeedComponent)

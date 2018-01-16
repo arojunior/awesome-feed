@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { compose, lifecycle } from 'recompose';
-import { browserHistory } from 'react-router';
+//import { browserHistory } from 'react-router';
 import LoginComponent from '../components/LoginComponent';
 
 import { setUser } from 'modules/Login';

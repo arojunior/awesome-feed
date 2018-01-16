@@ -16,7 +16,7 @@ export const setUser = createAction(SET_USER, code => {
     .post(`${GITHUB}/login/oauth/access_token`, {
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
-      redirect_uri: `http://localhost:3000/login`,
+      redirect_uri: `https://awesomefeed.js.org/login`,
       state: `awesomefeed`,
       code
     })

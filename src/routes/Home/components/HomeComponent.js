@@ -1,19 +1,19 @@
 import React from 'react'
-import Header from 'components/Header'
-import LeftSide from './LeftSide'
-import RightSide from './RightSide'
+import HeaderComponent from './HeaderComponent'
+import TrendsComponent from './TrendsComponent'
+import SuggestionsComponent from'./SuggestionsComponent'
 import FeedContainer from '../containers/FeedContainer'
 
 import 'assets/App.css'
 
 const HomeComponent = () => (
   <div>
-    <Header />
+    <HeaderComponent />
     <div className="container">
       <div className="row">
-        <LeftSide />
+        <TrendsComponent />
         <FeedContainer />
-        <RightSide />
+        <SuggestionsComponent />
       </div>
     </div>
   </div>

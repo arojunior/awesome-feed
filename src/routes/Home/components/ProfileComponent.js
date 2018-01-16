@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileComponent = ({ profile }) => (
+const ProfileComponent = ({ profile = {} }) => (
   <div className="panel panel-default">
     <div className="panel-body">
       <a href="">

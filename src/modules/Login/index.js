@@ -1,24 +1,36 @@
-import { handleAction, createAction } from 'redux-actions'
-import { defineState } from 'redux-localstore'
-import axios from 'axios'
-const SET_USER = 'modules/Login/SET_USER'
+import axios from 'axios';
+import { handleAction, createAction } from 'redux-actions';
+import { defineState } from 'redux-localstore';
+import { GITHUB, CLIENT_ID, CLIENT_SECRET } from 'constants/index';
+
+const SET_USER = 'modules/Login/SET_USER';
 
 const defaultState = {
-  profile: {}
-}
+  token: null
+};
 
-const initialState = defineState(defaultState)('Login')
+const initialState = defineState(defaultState)('Login');
 
-export const setUser = createAction(SET_USER, async username => {
-  const profile = await axios.get(`https://api.github.com/users/${username}`)
-  return profile.data
-})
+export const setUser = createAction(SET_USER, code => {
+  return axios
+    .post(`${GITHUB}/login/oauth/access_token`, {
+      client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
+      redirect_uri: `http://localhost:3000/login`,
+      state: `awesomefeed`,
+      code
+    })
+    .then(({ data }) => {
+      console.log(data);
+      return data.access_token;
+    });
+});
 
 export default handleAction(
   SET_USER,
   (state, action) => ({
     ...state,
-    profile: action.payload
+    token: action.payload
   }),
   initialState
-)
+);

@@ -1,14 +1,13 @@
-//import Layout from '../layouts'
-import Home from './Home'
-import Login from './Login'
+import Home from './Home/containers/HomeContainer'
+import Login from './Login/containers/LoginContainer'
 
 export default [
   {
-    path: '/:user',
+    path: '/',
     component: Home
   },
   {
-    path: '/',
+    path: '/login',
     component: Login
   }
 ]

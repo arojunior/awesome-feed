@@ -1,5 +1,5 @@
-import React from 'react'
-import { List } from 'react-virtualized'
+import React from 'react';
+import { List } from 'react-virtualized';
 
 import {
   IssueComment,
@@ -7,32 +7,32 @@ import {
   PushEvent,
   PullRequest,
   Create
-} from './events'
-import { GITHUB } from '../../../constants'
-import { transformDataForFeed } from 'routes/Home/services/feedActions'
+} from './events';
+import { GITHUB } from '../../../constants';
+import { transformDataForFeed } from 'routes/Home/services/feedActions';
 
 const cardByEvent = (type, card) => {
   switch (type) {
     case 'IssueComment':
-      return IssueComment(card)
+      return IssueComment(card);
     case 'WatchEvent':
-      return WatchEvent()
+      return WatchEvent();
     case 'PushEvent':
-      return PushEvent(card)
+      return PushEvent(card);
     case 'PullRequestEvent':
-      return PullRequest(card)
+      return PullRequest(card);
     case 'CreateEvent':
-      return Create(card)
+      return Create(card);
     default:
-      return null
+      return null;
   }
-}
+};
 
 const MiddleBody = ({ activity }) => {
-  const transformedList = transformDataForFeed(activity)
-  console.log(transformedList)
+  const transformedList = transformDataForFeed(activity);
+  console.log(transformedList);
   const rowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
-    const card = transformedList[index]
+    const card = transformedList[index];
 
     return card ? (
       <div className="media" key={key}>
@@ -85,18 +85,18 @@ const MiddleBody = ({ activity }) => {
           </ul>
         </div>
       </div>
-    ) : null
-  }
+    ) : null;
+  };
 
   return (
     <List
       width={530}
-      height={535}
+      height={10}
       rowHeight={20}
       rowCount={transformedList.length}
       rowRenderer={rowRenderer}
     />
-  )
-}
+  );
+};
 
-export default MiddleBody
+export default MiddleBody;

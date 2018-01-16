@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { handleAction, createAction } from 'redux-actions';
 import { defineState } from 'redux-localstore';
-import { GITHUB, CLIENT_ID, CLIENT_SECRET } from 'constants/index';
+import { CLIENT_ID, CLIENT_SECRET } from 'constants/index';
 
 const SET_USER = 'modules/Login/SET_USER';
 
@@ -13,17 +13,13 @@ const initialState = defineState(defaultState)('Login');
 
 export const setUser = createAction(SET_USER, code => {
   return axios
-    .post(`${GITHUB}/login/oauth/access_token`, {
+    .post(`https://github.com/login/oauth/access_token`, {
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
-      redirect_uri: `https://awesomefeed.js.org/login`,
+      redirect_uri: `https://awesomefeed.js.org/#/login`,
       state: `awesomefeed`,
       code
-    })
-    .then(({ data }) => {
-      console.log(data);
-      return data.access_token;
-    });
+    })    
 });
 
 export default handleAction(

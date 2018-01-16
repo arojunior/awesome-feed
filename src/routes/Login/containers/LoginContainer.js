@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { compose, lifecycle } from 'recompose';
-//import { browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import LoginComponent from '../components/LoginComponent';
 
 import { setUser } from 'modules/Login';
@@ -14,13 +14,13 @@ export default compose(
   lifecycle({
     componentDidMount() {
       const { dispatch } = this.props;
-      const code = window.location.search.split(`=`)[1];
+      const code = window.location.search.split(`=`)[1].replace(`&state`, ``);
       console.log(code);
       if (code) {
-        dispatch(setUser(code));
-        /*.then(() => {
+        dispatch(setUser(code))
+        .then(() => {
           browserHistory.push('/');
-        });*/
+        }).catch(err => console.log(err.response))
       }
     }
   })

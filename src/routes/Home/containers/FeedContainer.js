@@ -6,16 +6,9 @@ import MainFeedComponent from 'routes/Home/components/MainFeedComponent';
 export default compose(
   graphql(getGithubActivity, {
     name: 'activity',
-    props: ({ activity }) => {
-      console.log(activity);
-      if (!activity.loading) {
-        console.log(`activity`, activity.user.following);
-      }
-      return { activity };
-    }
   }),
   branch(
-    ({ activity }) => activity.loading || !activity,
+    ({ activity }) => activity.loading || !activity || activity.user.following.nodes.length === 0,
     renderComponent(renderNothing())
   )
 )(MainFeedComponent);

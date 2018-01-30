@@ -1,16 +1,10 @@
 import React from 'react';
-import { List } from 'react-virtualized';
-
-import {
-  IssueComment,
-  WatchEvent,
-  PushEvent,
-  PullRequest,
-  Create
-} from './events';
+import { List, AutoSizer } from 'react-virtualized';
+import * as Events from './EventsComponent';
 import { GITHUB } from '../../../constants';
 import { transformDataForFeed } from 'routes/Home/services/feedActions';
 
+/*
 const cardByEvent = (type, card) => {
   switch (type) {
     case 'IssueComment':
@@ -26,11 +20,10 @@ const cardByEvent = (type, card) => {
     default:
       return null;
   }
-};
+};*/
 
 const MiddleBody = ({ activity }) => {
   const transformedList = transformDataForFeed(activity);
-  console.log(transformedList);
   const rowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
     const card = transformedList[index];
 
@@ -42,7 +35,7 @@ const MiddleBody = ({ activity }) => {
           target="_blank"
         >
           <img
-            alt=""
+            alt={card.login}
             className="media-object img-rounded"
             height="40px"
             src={card.avatarUrl}
@@ -59,44 +52,26 @@ const MiddleBody = ({ activity }) => {
               </a>
             </small>
           </h4>
-          {cardByEvent(card.__typename, card)}
+          {Events[`${card.__typename}`] && Events[`${card.__typename}`](card)}
           <small>{card.createdAt}</small>
-          <ul className="nav nav-pills nav-pills-custom">
-            <li>
-              <a href="">
-                <span className="glyphicon glyphicon-share-alt" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span className="glyphicon glyphicon-retweet" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span className="glyphicon glyphicon-star" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span className="glyphicon glyphicon-option-horizontal" />
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     ) : null;
   };
 
   return (
-    <List
-      width={530}
-      height={10}
-      rowHeight={20}
-      rowCount={transformedList.length}
-      rowRenderer={rowRenderer}
-    />
-  );
+    <AutoSizer disableHeight>
+      {({ width }) => (
+        <List
+          width={width}
+          height={600}
+          rowHeight={90}
+          rowCount={transformedList.length}
+          rowRenderer={rowRenderer}
+        />
+      )}
+    </AutoSizer>
+  )
 };
 
 export default MiddleBody;

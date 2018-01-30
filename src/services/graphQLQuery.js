@@ -2,14 +2,14 @@ import gql from 'graphql-tag'
 
 export const getGithubActivity = gql`
   query {
-    user(login: "arojunior") {
-      following(last: 5) {
+    user(login: "${process.env.REACT_APP_USERNAME}") {
+      following(last: 100) {
         totalCount
         nodes {
           login
           name
           avatarUrl
-          issueComments(last: 3) {
+          issueComments(last: 5) {
             nodes {
               repository {
                 name
@@ -22,7 +22,18 @@ export const getGithubActivity = gql`
               createdAt
             }
           }
-          pullRequests(last: 3) {
+          pullRequests(last: 5) {
+            nodes {
+              repository {
+                name
+              }
+              bodyHTML
+              url
+              number
+              createdAt
+            }
+          }
+          commitComments(last: 5) {
             nodes {
               repository {
                 name
@@ -32,17 +43,7 @@ export const getGithubActivity = gql`
               createdAt
             }
           }
-          commitComments(last: 3) {
-            nodes {
-              repository {
-                name
-              }
-              bodyHTML
-              url
-              createdAt
-            }
-          }
-          starredRepositories(last: 3) {
+          starredRepositories(last: 5) {
             nodes {
               nameWithOwner
               createdAt
@@ -52,4 +53,22 @@ export const getGithubActivity = gql`
       }
     }
   }
+`
+
+export const getProfileInfo = gql`
+query {
+  user(login: "${process.env.REACT_APP_USERNAME}") {
+      avatarUrl
+      login
+      followers {
+        totalCount
+      }
+      following {
+        totalCount
+      }
+      starredRepositories {
+        totalCount
+      }
+  }
+}
 `

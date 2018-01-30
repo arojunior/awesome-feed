@@ -24,19 +24,6 @@ const Header = ({ handleChange, setUser, username }) => (
             </a>
           </li>
         </ul>
-        <div className="navbar-form navbar-right">
-          <div className="form-group has-feedback">
-            <form onSubmit={setUser}>
-              Github login: {' '}
-              <input
-                type="text"
-                className="form-control-nav"
-                value={username}
-                onChange={e => handleChange(e.target.value)}
-              />
-            </form>
-          </div>
-        </div>
       </div>
     </div>
   </div>

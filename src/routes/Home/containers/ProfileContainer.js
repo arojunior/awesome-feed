@@ -1,12 +1,14 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { compose } from 'recompose'
+import { compose, branch, renderComponent, renderNothing } from 'recompose';
+import { graphql } from 'react-apollo';
+import { getProfileInfo } from 'services/graphQLQuery';
 import ProfileComponent from 'routes/Home/components/ProfileComponent'
 
-const ProfileContainer = ({ profile }) => <ProfileComponent profile={profile} />
-
-const mapStateToProps = state => ({
-  profile: state.Login.profile
-})
-
-export default compose(connect(mapStateToProps))(ProfileContainer)
+export default compose(
+  graphql(getProfileInfo, {
+    name: 'profile',
+  }),
+  branch(
+    ({ profile }) => profile.loading || !profile,
+    renderComponent(renderNothing())
+  )
+)(ProfileComponent)

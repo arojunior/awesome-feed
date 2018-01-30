@@ -74,6 +74,7 @@ const RightSide = () => (
     <a
       href="http://js.org"
       target="_blank"
+      rel="noopener noreferrer"
       title="JS.ORG | JavaScript Community"
     >
       <img

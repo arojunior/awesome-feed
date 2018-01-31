@@ -13,6 +13,8 @@ export const getGithubActivity = gql`
             nodes {
               repository {
                 name
+                nameWithOwner
+                url
               }
               issue {
                 number
@@ -26,6 +28,8 @@ export const getGithubActivity = gql`
             nodes {
               repository {
                 name
+                nameWithOwner
+                url
               }
               bodyHTML
               url
@@ -37,6 +41,8 @@ export const getGithubActivity = gql`
             nodes {
               repository {
                 name
+                nameWithOwner
+                url
               }
               bodyHTML
               url
@@ -47,6 +53,7 @@ export const getGithubActivity = gql`
             nodes {
               nameWithOwner
               createdAt
+              url
             }
           }
         }

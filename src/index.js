@@ -8,6 +8,8 @@ import apolloClient from './services/apolloClient'
 import routes from './routes'
 import registerServiceWorker from './registerServiceWorker'
 
+import 'assets/App.css'
+
 render(
   <Provider store={store}>
     <ApolloProvider client={apolloClient}>

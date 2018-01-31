@@ -8,7 +8,7 @@ export default compose(
     name: 'profile',
   }),
   branch(
-    ({ profile }) => profile.loading || !profile,
+    ({ profile }) => profile.loading || profile.errors || !profile,
     renderComponent(renderNothing())
   )
 )(ProfileComponent)

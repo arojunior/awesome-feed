@@ -2,7 +2,7 @@ import React from 'react'
 import ProfileContainer from 'routes/Home/containers/ProfileContainer'
 
 const LeftSide = () => (
-  <div className="col-sm-3">
+  <div>
     <ProfileContainer />
     <div className="panel panel-default panel-custom">
       <div className="panel-heading">

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Header = ({ handleChange, setUser, username }) => (
-  <div className="navbar navbar-default navbar-static-top">
+  <div className="navbar navbar-default navbar-fixed-top">
     <div className="container">
       <div
         className="navbar-collapse navbar-collapse-1 collapse"

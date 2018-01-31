@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RightSide = () => (
-  <div className="col-sm-3">
+  <div>
     <div className="panel panel-default panel-custom">
       <div className="panel-heading">
         <h3 className="panel-title">

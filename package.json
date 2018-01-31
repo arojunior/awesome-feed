@@ -58,12 +58,12 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^3.0.5",
-    "react-virtualized": "^9.11.0",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-localstore": "^0.2.1",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "styled-components": "^3.1.4"
   },
   "scripts": {
     "start": "node scripts/start.js",

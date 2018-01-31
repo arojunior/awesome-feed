@@ -2,7 +2,7 @@ import React from 'react';
 import FeedComponent from './FeedComponent';
 
 const MainFeed = ({ activity }) => (
-  <div className="col-sm-6">
+  <div>
     <div className="panel panel-info">
       <div className="panel-body">
         <FeedComponent activity={activity} />

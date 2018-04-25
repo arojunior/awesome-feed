@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const RightSide = () => (
-  <div className="col-sm-3">
+  <div>
     <div className="panel panel-default panel-custom">
       <div className="panel-heading">
         <h3 className="panel-title">
@@ -74,6 +74,7 @@ const RightSide = () => (
     <a
       href="http://js.org"
       target="_blank"
+      rel="noopener noreferrer"
       title="JS.ORG | JavaScript Community"
     >
       <img
@@ -83,6 +84,6 @@ const RightSide = () => (
       />
     </a>
   </div>
-)
+);
 
-export default RightSide
+export default RightSide;

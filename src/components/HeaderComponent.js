@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Header = ({ handleChange, setUser, username }) => (
-  <div className="navbar navbar-default navbar-static-top">
+  <div className="navbar navbar-default navbar-fixed-top">
     <div className="container">
       <div
         className="navbar-collapse navbar-collapse-1 collapse"
@@ -24,22 +24,9 @@ const Header = ({ handleChange, setUser, username }) => (
             </a>
           </li>
         </ul>
-        <div className="navbar-form navbar-right">
-          <div className="form-group has-feedback">
-            <form onSubmit={setUser}>
-              Github login: {' '}
-              <input
-                type="text"
-                className="form-control-nav"
-                value={username}
-                onChange={e => handleChange(e.target.value)}
-              />
-            </form>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-)
+);
 
-export default Header
+export default Header;

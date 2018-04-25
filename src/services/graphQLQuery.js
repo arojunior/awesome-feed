@@ -1,15 +1,26 @@
-import gql from 'graphql-tag'
+import gql from 'graphql-tag';
+import store from 'modules/index';
+
+const state = store.getState();
 
 export const getGithubActivity = gql`
   query {
-    user(login: "${process.env.REACT_APP_USERNAME}") {
+    user(login: "${state.Login.username}") {
       following(last: 100) {
         totalCount
         nodes {
           login
           name
           avatarUrl
-          issueComments(last: 5) {
+          watching(last: 2) {
+            nodes {              
+              description
+              url
+              nameWithOwner
+              createdAt
+            }
+          }          
+          issueComments(last: 3) {
             nodes {
               repository {
                 name
@@ -18,13 +29,14 @@ export const getGithubActivity = gql`
               }
               issue {
                 number
+                title
               }
               bodyHTML
               url
               createdAt
             }
           }
-          pullRequests(last: 5) {
+          pullRequests(last: 3) {
             nodes {
               repository {
                 name
@@ -54,17 +66,26 @@ export const getGithubActivity = gql`
               nameWithOwner
               createdAt
               url
+              description
+              stargazers {
+                totalCount
+              }            
+              languages(first: 5) {
+                nodes {
+                  name
+                }
+              }                
             }
           }
         }
       }
     }
   }
-`
+`;
 
 export const getProfileInfo = gql`
 query {
-  user(login: "${process.env.REACT_APP_USERNAME}") {
+  user(login: "${state.Login.username}") {
       avatarUrl
       login
       followers {
@@ -78,4 +99,4 @@ query {
       }
   }
 }
-`
+`;

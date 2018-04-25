@@ -1,5 +1,5 @@
-import React from 'react'
-import ProfileContainer from 'routes/Home/containers/ProfileContainer'
+import React from 'react';
+import ProfileContainer from 'containers/ProfileContainer';
 
 const LeftSide = () => (
   <div>
@@ -41,6 +41,6 @@ const LeftSide = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default LeftSide
+export default LeftSide;

@@ -2,10 +2,10 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { ApolloProvider } from 'react-apollo'
-import { Router, hashHistory } from 'react-router'
+import moment from 'moment-timezone'
 import store from './modules'
 import apolloClient from './services/apolloClient'
-import routes from './routes'
+import App from './containers/HomeContainer'
 import registerServiceWorker from './registerServiceWorker'
 
 import 'assets/App.css'
@@ -13,10 +13,11 @@ import 'assets/App.css'
 render(
   <Provider store={store}>
     <ApolloProvider client={apolloClient}>
-      <Router history={hashHistory} routes={routes} />
+      <App />
     </ApolloProvider>
   </Provider>,
   document.getElementById('root')
 )
 
+moment.tz.setDefault(moment.tz.guess());
 registerServiceWorker()

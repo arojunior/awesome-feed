@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Header = ({ handleChange, setUser, username }) => (
   <div className="navbar navbar-default navbar-fixed-top">
@@ -27,6 +27,6 @@ const Header = ({ handleChange, setUser, username }) => (
       </div>
     </div>
   </div>
-)
+);
 
-export default Header
+export default Header;

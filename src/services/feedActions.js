@@ -1,4 +1,4 @@
-import { flatten, sort, descend, prop } from 'ramda'
+import { flatten, sort, descend, prop } from 'ramda';
 
 const usersWithActivities = users => {
   const activitiesByUser = users.map(data => {
@@ -6,11 +6,11 @@ const usersWithActivities = users => {
       login: data.login,
       name: data.name,
       avatarUrl: data.avatarUrl
-    }
-    return flatten(mergeAllUsersActivities({ profile, activities: data }))
-  })
-  return activitiesByUser.reduce((prev, curr) => prev.concat(curr), [])
-}
+    };
+    return flatten(mergeAllUsersActivities({ profile, activities: data }));
+  });
+  return activitiesByUser.reduce((prev, curr) => prev.concat(curr), []);
+};
 
 const mergeAllUsersActivities = ({ profile, activities }) => {
   return flatten([
@@ -30,10 +30,10 @@ const mergeAllUsersActivities = ({ profile, activities }) => {
       ...profile,
       ...data
     }))
-  ])
-}
+  ]);
+};
 
-const sortedByLast = activity => sort(descend(prop('createdAt')))(activity)
+const sortedByLast = activity => sort(descend(prop('createdAt')))(activity);
 
 export const transformDataForFeed = activity =>
-  sortedByLast(usersWithActivities(activity.user.following.nodes))
+  activity && sortedByLast(usersWithActivities(activity.user.following.nodes));

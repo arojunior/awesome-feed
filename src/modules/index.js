@@ -1,12 +1,9 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import storeSynchronize from 'redux-localstore';
-
-import Github from './Github';
 import Login from './Login';
 
 const rootReducer = combineReducers({
-  Github,
   Login
 });
 

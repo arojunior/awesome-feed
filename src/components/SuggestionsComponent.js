@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const RightSide = () => (
   <div>
@@ -84,6 +84,6 @@ const RightSide = () => (
       />
     </a>
   </div>
-)
+);
 
-export default RightSide
+export default RightSide;

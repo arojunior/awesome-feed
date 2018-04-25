@@ -52,8 +52,6 @@ const RightColumn = styled.div`
   margin-top: 60px;
 `;
 
-
-
 const HomeComponent = () => (
   <Container>
     <HeaderComponent />

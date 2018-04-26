@@ -35,7 +35,7 @@ const renderItems = (card, index) => (
 );
 
 const FeedComponent = ({ activity }) => {
-  const transformedList = transformDataForFeed(activity);
+  const transformedList = transformDataForFeed(activity) || [];
   return <div>{transformedList.map(renderItems)}</div>;
 };
 

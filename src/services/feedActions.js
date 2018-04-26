@@ -1,4 +1,4 @@
-import { flatten, sort, descend, prop } from 'ramda';
+import { flatten, sort, descend, prop, propOr } from 'ramda';
 
 const usersWithActivities = users => {
   const activitiesByUser = users.map(data => {
@@ -36,4 +36,5 @@ const mergeAllUsersActivities = ({ profile, activities }) => {
 const sortedByLast = activity => sort(descend(prop('createdAt')))(activity);
 
 export const transformDataForFeed = activity =>
-  activity && sortedByLast(usersWithActivities(activity.user.following.nodes));
+  propOr(`user.following`, activity, undefined) &&
+  sortedByLast(usersWithActivities(activity.user.following.nodes));

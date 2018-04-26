@@ -1,4 +1,5 @@
 import React from 'react';
+import GithubLogo from 'assets/img/GitHub-Logo-Web-Development-Community.png';
 
 const RightSide = () => (
   <div>
@@ -71,18 +72,32 @@ const RightSide = () => (
         </a>
       </div>
     </div>
-    <a
-      href="http://js.org"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="JS.ORG | JavaScript Community"
-    >
-      <img
-        src="http://logo.js.org/dark_horz.png"
-        width="102"
-        alt="JS.ORG Logo"
-      />
-    </a>
+    <div className="row">
+      <div className="col-md-5 col-md-offset-1">
+        <a
+          href="http://js.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="JS.ORG | JavaScript Community"
+        >
+          <img
+            src="http://logo.js.org/dark_horz.png"
+            width="80"
+            alt="JS.ORG Logo"
+          />
+        </a>
+      </div>
+      <div className="col-md-5">
+        <a
+          href="https://github.com/arojunior/awesome-feed"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Contribute | Fork it on Github"
+        >
+          <img src={GithubLogo} width="120" alt="Github" />
+        </a>
+      </div>
+    </div>
   </div>
 );
 

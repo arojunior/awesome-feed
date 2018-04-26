@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({ handleChange, setUser, username }) => (
+const Header = ({ handleLogout }) => (
   <div className="navbar navbar-default navbar-fixed-top">
     <div className="container">
       <div
@@ -21,6 +21,11 @@ const Header = ({ handleChange, setUser, username }) => (
           <li>
             <a href="">
               <span className="glyphicon glyphicon-user" /> Developers
+            </a>
+          </li>
+          <li>
+            <a href="" onClick={handleLogout}>
+              <span className="glyphicon glyphicon-log-out" /> Logout
             </a>
           </li>
         </ul>

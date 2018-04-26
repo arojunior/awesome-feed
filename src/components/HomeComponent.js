@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import HeaderComponent from './HeaderComponent'
-import TrendsComponent from './TrendsComponent'
-import SuggestionsComponent from './SuggestionsComponent'
-import FeedContainer from '../containers/FeedContainer'
+import React from 'react';
+import styled from 'styled-components';
+import HeaderComponent from './HeaderComponent';
+import TrendsComponent from './TrendsComponent';
+import SuggestionsComponent from './SuggestionsComponent';
+import FeedContainer from '../containers/FeedContainer';
 
 const Container = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const MiddleColumn = styled.div`
   min-height: 100vh;
   max-width: 58%;
   flex-direction: column;
-  order: 2;  
+  order: 2;
   align-self: center;
 `;
 
@@ -52,9 +52,9 @@ const RightColumn = styled.div`
   margin-top: 60px;
 `;
 
-const HomeComponent = () => (
+const HomeComponent = ({ handleLogout }) => (
   <Container>
-    <HeaderComponent />
+    <HeaderComponent handleLogout={handleLogout} />
     <Row>
       <LeftColumn>
         <TrendsComponent />
@@ -67,6 +67,6 @@ const HomeComponent = () => (
       </RightColumn>
     </Row>
   </Container>
-)
+);
 
-export default HomeComponent
+export default HomeComponent;

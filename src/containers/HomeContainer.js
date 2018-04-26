@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import {
   compose,
+  withHandlers,
   branch,
   lifecycle,
   renderComponent,
@@ -8,8 +9,10 @@ import {
 } from 'recompose';
 import HomeComponent from 'components/HomeComponent';
 import LoginContainer from 'containers/LoginContainer';
-import { setToken } from 'modules/Login';
+import { setToken, setUsername } from 'modules/Login';
 import getToken from 'services/token';
+
+const handleLogout = ({ dispatch }) => () => dispatch(setUsername(null));
 
 const mapStateToProps = state => ({
   token: state.Login.token,
@@ -18,6 +21,9 @@ const mapStateToProps = state => ({
 
 export default compose(
   connect(mapStateToProps),
+  withHandlers({
+    handleLogout
+  }),
   lifecycle({
     componentDidMount() {
       const { dispatch, token } = this.props;

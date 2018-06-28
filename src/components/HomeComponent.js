@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import HeaderComponent from './HeaderComponent';
 import TrendsComponent from './TrendsComponent';
 import SuggestionsComponent from './SuggestionsComponent';
@@ -68,5 +69,9 @@ const HomeComponent = ({ handleLogout }) => (
     </Row>
   </Container>
 );
+
+HomeComponent.propTypes = {
+  handleLogout: PropTypes.func.isRequired,
+};
 
 export default HomeComponent;

@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { GITHUB } from 'constants/index';
 
-const ProfileComponent = ({ profile = {} }) => (
+const ProfileComponent = ({ profile }) => (
   <div className="panel panel-default">
     <div className="panel-body">
       <a href="">
@@ -34,5 +35,13 @@ const ProfileComponent = ({ profile = {} }) => (
     </div>
   </div>
 );
+
+ProfileComponent.propTypes = {
+  profile: PropTypes.shape({}),
+};
+
+ProfileComponent.defaultProps = {
+  profile: {},
+};
 
 export default ProfileComponent;

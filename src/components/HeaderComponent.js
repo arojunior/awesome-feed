@@ -1,12 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Header = ({ handleLogout }) => (
   <div className="navbar navbar-default navbar-fixed-top">
     <div className="container">
-      <div
-        className="navbar-collapse navbar-collapse-1 collapse"
-        aria-expanded="true"
-      >
+      <div className="navbar-collapse navbar-collapse-1 collapse" aria-expanded="true">
         <ul className="nav navbar-nav">
           <li className="active">
             <a href="/">
@@ -33,5 +31,9 @@ const Header = ({ handleLogout }) => (
     </div>
   </div>
 );
+
+Header.propTypes = {
+  handleLogout: PropTypes.func.isRequired,
+};
 
 export default Header;

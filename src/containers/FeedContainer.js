@@ -10,17 +10,15 @@ const hasError = ({ activity }) => activity.error;
 const hasNoData = ({ activity }) => !activity;
 
 const nonOptimalStates = states =>
-  compose(
-    ...states.map(state => branch(state.when, renderComponent(state.render)))
-  );
+  compose(...states.map(state => branch(state.when, renderComponent(state.render))));
 
 export default compose(
   graphql(getGithubActivity, {
-    name: 'activity'
+    name: `activity`,
   }),
   nonOptimalStates([
     { when: hasNoData, render: renderNothing() },
     { when: hasError, render: ErrorComponent },
-    { when: isLoading, render: SpinnerComponent }
-  ])
+    { when: isLoading, render: SpinnerComponent },
+  ]),
 )(MainFeedComponent);

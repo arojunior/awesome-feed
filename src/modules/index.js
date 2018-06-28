@@ -4,7 +4,7 @@ import storeSynchronize from 'redux-localstore';
 import Login from './Login';
 
 const rootReducer = combineReducers({
-  Login
+  Login,
 });
 
 const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
@@ -12,7 +12,10 @@ const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
 const store = createStore(
   rootReducer,
   {},
-  compose(applyMiddleware(promiseMiddleware), devTools)
+  compose(
+    applyMiddleware(promiseMiddleware),
+    devTools,
+  ),
 );
 
 storeSynchronize(store);

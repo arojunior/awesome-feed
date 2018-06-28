@@ -6,13 +6,10 @@ import ProfileComponent from 'components/ProfileComponent';
 
 export default compose(
   graphql(getProfileInfo, {
-    name: 'profile'
+    name: `profile`,
   }),
   branch(
-    ({ profile }) =>
-      profile.loading ||
-      profile.errors ||
-      isEmpty(propOr(`user`, profile, null)),
-    renderComponent(renderNothing())
-  )
+    ({ profile }) => profile.loading || profile.errors || isEmpty(propOr(`user`, profile, null)),
+    renderComponent(renderNothing()),
+  ),
 )(ProfileComponent);

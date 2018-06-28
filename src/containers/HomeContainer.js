@@ -5,7 +5,7 @@ import {
   branch,
   lifecycle,
   renderComponent,
-  renderNothing
+  renderNothing,
 } from 'recompose';
 import HomeComponent from 'components/HomeComponent';
 import LoginContainer from 'containers/LoginContainer';
@@ -16,13 +16,13 @@ const handleLogout = ({ dispatch }) => () => dispatch(setUsername(null));
 
 const mapStateToProps = state => ({
   token: state.Login.token,
-  username: state.Login.username
+  username: state.Login.username,
 });
 
 export default compose(
   connect(mapStateToProps),
   withHandlers({
-    handleLogout
+    handleLogout,
   }),
   lifecycle({
     componentDidMount() {
@@ -35,8 +35,8 @@ export default compose(
       if (nextProps.username) {
         window.location.reload();
       }
-    }
+    },
   }),
   branch(({ username }) => !username, renderComponent(LoginContainer)),
-  branch(({ token }) => !token, renderComponent(renderNothing()))
+  branch(({ token }) => !token, renderComponent(renderNothing())),
 )(HomeComponent);

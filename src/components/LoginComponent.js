@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const LoginComponent = ({ setGithubLogin, handleChange }) => (
+const LoginComponent = ({ setGithubLogin, handleChange, onKeyPress }) => (
   <div className="container">
     <div className="jumbotron">
       <h1>Github username</h1>
@@ -17,6 +18,8 @@ const LoginComponent = ({ setGithubLogin, handleChange }) => (
           className="btn btn-primary btn-lg"
           onClick={setGithubLogin}
           role="button"
+          tabIndex={0}
+          onKeyPress={onKeyPress}
         >
           Send
         </a>
@@ -24,5 +27,11 @@ const LoginComponent = ({ setGithubLogin, handleChange }) => (
     </div>
   </div>
 );
+
+LoginComponent.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  setGithubLogin: PropTypes.func.isRequired,
+  onKeyPress: PropTypes.func.isRequired,
+};
 
 export default LoginComponent;

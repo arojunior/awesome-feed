@@ -1,8 +1,8 @@
 {
   "name": "awesome-feed",
   "homepage": "https://awesomefeed.js.org",
-  "version": "0.0.2",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "devDependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
@@ -75,8 +75,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build",
+    "deploy": "yarn build && gh-pages -d build",
     "lint": "./node_modules/.bin/eslint src/**"
   },
   "jest": {

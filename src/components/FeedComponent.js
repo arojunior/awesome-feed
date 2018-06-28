@@ -38,7 +38,7 @@ const FeedComponent = ({ activity }) => {
 };
 
 FeedComponent.propTypes = {
-  activity: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  activity: PropTypes.shape({}).isRequired,
 };
 
 export default FeedComponent;

@@ -4,10 +4,13 @@ import store from 'modules/index';
 const state = store.getState();
 
 export const getGithubActivity = gql`
-  query {
+  query ($cursor: String) {
     user(login: "${state.Login.username}") {
-      following(last: 100) {
+      following(last: 10, before: $cursor) {
         totalCount
+        edges {
+          cursor
+        }
         nodes {
           login
           name
@@ -49,7 +52,7 @@ export const getGithubActivity = gql`
               createdAt
             }
           }
-          commitComments(last: 5) {
+          commitComments(last: 3) {
             nodes {
               repository {
                 name
@@ -61,7 +64,7 @@ export const getGithubActivity = gql`
               createdAt
             }
           }
-          starredRepositories(last: 5) {
+          starredRepositories(last: 3) {
             nodes {
               nameWithOwner
               createdAt

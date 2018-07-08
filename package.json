@@ -1,7 +1,7 @@
 {
   "name": "awesome-feed",
   "homepage": "https://awesomefeed.js.org",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "devDependencies": {
     "autoprefixer": "7.1.1",

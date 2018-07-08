@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const renderTrendingRepositories = repos =>
-  repos.slice(0, 10).map(({ author, name, url }) => (
+  repos.slice(0, 8).map(({ author, name, url }) => (
     <li key={url}>
       <a href={url} target="_blank">
         {author} / {name}
@@ -17,7 +17,6 @@ const TrendingReposComponent = ({ repos }) => (
         Trends <small>repositories</small>
       </h3>
     </div>
-
     <div className="panel-body">
       <ul className="list-unstyled">{renderTrendingRepositories(repos)}</ul>
     </div>

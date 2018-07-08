@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import history from '../history';
 
 const Header = ({ handleLogout }) => (
   <div className="navbar navbar-default navbar-fixed-top">
@@ -12,7 +13,7 @@ const Header = ({ handleLogout }) => (
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" onClick={() => history.push(`repositories`)}>
               <span className="glyphicon glyphicon-bell" /> Repositories
             </a>
           </li>

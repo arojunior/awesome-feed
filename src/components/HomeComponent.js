@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Route } from 'react-router-dom';
 import ProfileContainer from 'containers/ProfileContainer';
 import TrendingReposContainer from 'containers/TrendingReposContainer';
+import RepositoriesPageContainer from 'containers/RepositoriesPageContainer';
 import FeedContainer from 'containers/FeedContainer';
 import TrendingUsersContainer from 'containers/TrendingUsersContainer';
 import HeaderComponent from './HeaderComponent';
@@ -63,7 +65,8 @@ const HomeComponent = ({ handleLogout }) => (
         <TrendingReposContainer />
       </LeftColumn>
       <MiddleColumn>
-        <FeedContainer />
+        <Route exact path="/" component={FeedContainer} />
+        <Route exact path="/repositories" component={RepositoriesPageContainer} />
       </MiddleColumn>
       <RightColumn>
         <TrendingUsersContainer />

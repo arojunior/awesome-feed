@@ -18,7 +18,7 @@ const Header = ({ handleLogout }) => (
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" onClick={() => history.push(`developers`)}>
               <span className="glyphicon glyphicon-user" /> Developers
             </a>
           </li>

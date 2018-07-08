@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import ProfileContainer from 'containers/ProfileContainer';
 import TrendingReposContainer from 'containers/TrendingReposContainer';
 import RepositoriesPageContainer from 'containers/RepositoriesPageContainer';
+import DevelopersPageContainer from 'containers/DevelopersPageContainer';
 import FeedContainer from 'containers/FeedContainer';
 import TrendingUsersContainer from 'containers/TrendingUsersContainer';
 import HeaderComponent from './HeaderComponent';
@@ -67,6 +68,7 @@ const HomeComponent = ({ handleLogout }) => (
       <MiddleColumn>
         <Route exact path="/" component={FeedContainer} />
         <Route exact path="/repositories" component={RepositoriesPageContainer} />
+        <Route exact path="/developers" component={DevelopersPageContainer} />
       </MiddleColumn>
       <RightColumn>
         <TrendingUsersContainer />

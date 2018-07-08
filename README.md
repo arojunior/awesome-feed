@@ -12,8 +12,8 @@
 
 ## TODO
 
-* Search for trending repositories [#22](https://github.com/arojunior/awesome-feed/issues/22)
-* Search for trending user [#23](https://github.com/arojunior/awesome-feed/issues/23)
+* Create page for trending repositories
+* Create page for trending user
 * Improve FeedComponent [#24](https://github.com/arojunior/awesome-feed/issues/24)
 * Choose event types [#29](https://github.com/arojunior/awesome-feed/issues/29)
 * Responsive layout (mobile compatibility) [#37](https://github.com/arojunior/awesome-feed/issues/37)

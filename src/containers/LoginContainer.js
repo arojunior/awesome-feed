@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { compose, withHandlers, withState } from 'recompose';
-import { setUsername } from 'modules/Login';
+import { setUsername } from 'modules/Login/actions';
 import LoginComponent from 'components/LoginComponent';
 
 const handleChange = ({ setGithubUsername }) => e => setGithubUsername(e.currentTarget.value);

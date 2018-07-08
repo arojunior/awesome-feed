@@ -9,7 +9,7 @@ import {
 } from 'recompose';
 import HomeComponent from 'components/HomeComponent';
 import LoginContainer from 'containers/LoginContainer';
-import { setToken, setUsername } from 'modules/Login';
+import { setToken, setUsername } from 'modules/Login/actions';
 import getToken from 'services/token';
 
 const handleLogout = ({ dispatch }) => () => dispatch(setUsername(null));

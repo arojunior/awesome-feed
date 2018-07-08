@@ -1,9 +1,7 @@
 import base64 from 'base-64';
-import { handleActions, createAction } from 'redux-actions';
+import { handleActions } from 'redux-actions';
 import { defineState } from 'redux-localstore';
-
-const SET_TOKEN = `modules/Login/SET_TOKEN`;
-const SET_USERNAME = `modules/Login/SET_USERNAME`;
+import { SET_TOKEN, SET_USERNAME } from './actions';
 
 const defaultState = {
   token: null,
@@ -11,9 +9,6 @@ const defaultState = {
 };
 
 const initialState = defineState(defaultState)(`Login`);
-
-export const setToken = createAction(SET_TOKEN);
-export const setUsername = createAction(SET_USERNAME);
 
 export default handleActions(
   {

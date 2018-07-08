@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import ProfileContainer from 'containers/ProfileContainer';
+import TrendingReposContainer from 'containers/TrendingReposContainer';
+import FeedContainer from 'containers/FeedContainer';
 import HeaderComponent from './HeaderComponent';
-import TrendsComponent from './TrendsComponent';
 import SuggestionsComponent from './SuggestionsComponent';
-import FeedContainer from '../containers/FeedContainer';
 
 const Container = styled.div`
   display: flex;
@@ -58,7 +59,8 @@ const HomeComponent = ({ handleLogout }) => (
     <HeaderComponent handleLogout={handleLogout} />
     <Row>
       <LeftColumn>
-        <TrendsComponent />
+        <ProfileContainer />
+        <TrendingReposContainer />
       </LeftColumn>
       <MiddleColumn>
         <FeedContainer />

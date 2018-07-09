@@ -1,23 +1,22 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router } from 'react-router';
+import { HashRouter as Router } from 'react-router-dom';
 import { ApolloProvider } from 'react-apollo';
 import moment from 'moment-timezone';
 import store from './modules';
-import history from './history';
 import apolloClient from './services/apolloClient';
 import App from './containers/HomeContainer';
 import 'assets/App.css';
 
 render(
-  <Router history={history}>
-    <Provider store={store}>
-      <ApolloProvider client={apolloClient}>
+  <Provider store={store}>
+    <ApolloProvider client={apolloClient}>
+      <Router>
         <App />
-      </ApolloProvider>
-    </Provider>
-  </Router>,
+      </Router>
+    </ApolloProvider>
+  </Provider>,
   document.getElementById(`root`),
 );
 

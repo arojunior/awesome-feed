@@ -7,6 +7,7 @@ import {
   renderComponent,
   renderNothing,
 } from 'recompose';
+import { withRouter } from 'react-router';
 import HomeComponent from 'components/HomeComponent';
 import LoginContainer from 'containers/LoginContainer';
 import { setToken, setUsername } from 'modules/Login/actions';
@@ -20,6 +21,7 @@ const mapStateToProps = state => ({
 });
 
 export default compose(
+  withRouter,
   connect(mapStateToProps),
   withHandlers({
     handleLogout,

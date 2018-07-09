@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import history from '../history';
+import { NavLink } from 'react-router-dom';
 
 const Header = ({ handleLogout }) => (
   <div className="navbar navbar-default navbar-fixed-top">
@@ -13,14 +13,14 @@ const Header = ({ handleLogout }) => (
             </a>
           </li>
           <li>
-            <a href="" onClick={() => history.push(`repositories`)}>
+            <NavLink to="repositories">
               <span className="glyphicon glyphicon-bell" /> Repositories
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="" onClick={() => history.push(`developers`)}>
+            <NavLink to="developers">
               <span className="glyphicon glyphicon-user" /> Developers
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="" onClick={handleLogout}>

@@ -17,17 +17,14 @@ export const WatchEvent = () => <p>Started to watch</p>;
 
 export const Repository = card => (
   <div>
-    <strong>
-      Starred
-      {card.nameWithOwner}
-    </strong>
+    <strong>Starred:</strong> <span className="glyphicon glyphicon-star" />
+    {card.stargazers.totalCount}
     <br />
     {card.description}
     <br />
-    [
-    {card.languages.nodes.map(({ name }) => name).join(`, `)}
-    ] {` `}
-    <strong>Stars:</strong> {card.stargazers.totalCount}
+    <small>
+      {card.languages.length && `[${card.languages.nodes.map(({ name }) => name).join(`, `)}]`}
+    </small>
   </div>
 );
 

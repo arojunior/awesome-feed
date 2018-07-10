@@ -3,6 +3,7 @@
   "homepage": "https://awesomefeed.js.org",
   "version": "0.2.0",
   "private": false,
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",

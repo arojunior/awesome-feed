@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { compose, branch, lifecycle, renderComponent } from 'recompose';
+import { compose, pure, branch, lifecycle, renderComponent } from 'recompose';
 import { isEmpty } from 'ramda';
 import { fetchRepositories } from '@huchenme/github-trending';
 import TrendingReposComponent from 'components/TrendingReposComponent';
@@ -11,6 +11,7 @@ const mapStateToProps = state => ({
 });
 
 export default compose(
+  pure,
   connect(mapStateToProps),
   lifecycle({
     componentDidMount() {

@@ -6,7 +6,7 @@
 
 > Lots of people uses Github as your Social Network, the idea is to make an awesome feed for Github to stay up to date with what is happening and what the users who you follow are working on... all of it with the Twitter layout.
 
-![ScreenShot](https://image.ibb.co/kRM2uS/awesome_feed.gif)
+![ScreenShot](https://image.ibb.co/e3OwDd/ezgif_com_optimize.gif)
 
 **_Yes, I need help with everything!_**
 

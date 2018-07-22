@@ -1,7 +1,7 @@
 import { compose, branch, renderComponent, renderNothing } from 'recompose';
 import { graphql } from 'react-apollo';
 import { connect } from 'react-redux';
-import { merge, head } from 'ramda';
+import { head } from 'ramda';
 import { getGithubActivity } from 'services/graphQLQuery';
 import MainFeedComponent from 'components/MainFeedComponent';
 import SpinnerComponent from 'components/SpinnerComponent';
@@ -32,7 +32,7 @@ export default compose(
           },
           updateQuery(previousResult, { fetchMoreResult }) {
             if (fetchMoreResult.user.following.nodes.length) {
-              return merge(previousResult, fetchMoreResult);
+              return fetchMoreResult;
             }
             return previousResult;
           },

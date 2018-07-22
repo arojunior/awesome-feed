@@ -33,6 +33,10 @@ const LeftColumn = styled.div`
   order: 1;
   margin-top: 60px;
   margin-left: 10px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const MiddleColumn = styled.div`
@@ -43,6 +47,9 @@ const MiddleColumn = styled.div`
   flex-direction: column;
   order: 2;
   align-self: center;
+  @media only screen and (max-width: 768px) {
+    max-width: 98%;
+  }
 `;
 
 const RightColumn = styled.div`
@@ -55,6 +62,10 @@ const RightColumn = styled.div`
   width: 20%;
   order: 3;
   margin-top: 60px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const HomeComponent = ({ handleLogout }) => (

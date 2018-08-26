@@ -69,7 +69,7 @@
     "react-redux": "^5.0.5",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "recompose": "^0.27.1",
+    "recompose": "^0.28.2",
     "redux": "^4.0.0",
     "redux-actions": "^2.2.1",
     "redux-localstore": "^0.2.1",

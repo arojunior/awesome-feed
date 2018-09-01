@@ -21,7 +21,8 @@ const FeedComponent = ({ activity = {} }) =>
           {card.name}
           {` `}
           <small>
-            in{` `}
+            in
+            {` `}
             <a href={(card.repository && card.repository.url) || card.url} target="_blank">
               {(card.repository && card.repository.nameWithOwner) || card.nameWithOwner}
             </a>

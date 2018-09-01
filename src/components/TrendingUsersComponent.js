@@ -15,8 +15,8 @@ const renderTrendingUsers = users =>
           {username} ({name})
         </h4>
         <a href={url} className="btn btn-default btn-xs" target="_blank">
+          {` `}+ <span className="glyphicon glyphicon-user" /> Follow
           {` `}
-          + <span className="glyphicon glyphicon-user" /> Follow{` `}
         </a>
       </div>
     </div>

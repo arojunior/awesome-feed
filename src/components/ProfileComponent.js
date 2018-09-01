@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GITHUB } from 'constants/index';
+import { GITHUB } from '../constants';
 
 const ProfileComponent = ({ profile }) => (
   <div className="panel panel-default">

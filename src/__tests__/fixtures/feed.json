@@ -1,0 +1,2294 @@
+{
+  "data": {
+    "user": {
+      "following": {
+        "totalCount": 29,
+        "edges": [
+          { "cursor": "Y3Vyc29yOnYyOpHOACkGAA==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAC7Skw==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOADQBMA==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOADbCXA==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOADzpJQ==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAENMzQ==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAFNRdA==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAFcprA==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAGjMsw==", "__typename": "UserEdge" },
+          { "cursor": "Y3Vyc29yOnYyOpHOAHZ5RQ==", "__typename": "UserEdge" }
+        ],
+        "nodes": [
+          {
+            "login": "lucasconstantino",
+            "name": "Lucas Constantino Silva",
+            "avatarUrl": "https://avatars2.githubusercontent.com/u/2688512?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "Webpack loader that adds a documentId to a compiled graphql document, which can be used when persisting/retrieving documents",
+                  "url":
+                    "https://github.com/TallerWebSolutions/graphql-persisted-document-loader",
+                  "nameWithOwner":
+                    "TallerWebSolutions/graphql-persisted-document-loader",
+                  "createdAt": "2018-08-06T07:26:44Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": "Kristin & Guilherme wedding gift",
+                  "url":
+                    "https://github.com/lucasconstantino/guilherme-kristin",
+                  "nameWithOwner": "lucasconstantino/guilherme-kristin",
+                  "createdAt": "2018-08-06T19:07:03Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "apollo-cache-invalidation",
+                    "nameWithOwner":
+                      "lucasconstantino/apollo-cache-invalidation",
+                    "url":
+                      "https://github.com/lucasconstantino/apollo-cache-invalidation",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 4,
+                    "title": "Support Apollo Client 2.0",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"346300\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dallonf\">@dallonf</a> thanks for the heads up. I haven't been working with this project for some time, though I know the necessity is relevant. I'll see if I find the time to make it work with Apollo 2.0</p>",
+                  "url":
+                    "https://github.com/lucasconstantino/apollo-cache-invalidation/issues/4#issuecomment-408569926",
+                  "createdAt": "2018-07-28T00:41:13Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "react-apollo",
+                    "nameWithOwner": "apollographql/react-apollo",
+                    "url": "https://github.com/apollographql/react-apollo",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1869,
+                    "title": "Loading true when skipped",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Also related, I think it might be the case to create yet another <code>networkStatus</code>. I mean, simply providing <code>loading=false</code> on skipping situations might not be enough information for some UI, and relying on a <code>networkStatus=7</code> would misinform the readiness of the operation.</p>",
+                  "url":
+                    "https://github.com/apollographql/react-apollo/issues/1869#issuecomment-408925057",
+                  "createdAt": "2018-07-30T16:27:07Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "react-preload",
+                    "nameWithOwner": "sambernard/react-preload",
+                    "url": "https://github.com/sambernard/react-preload",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 29,
+                    "title":
+                      "TypeError: Cannot read property 'element' of undefined",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"170295\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sambernard\">@sambernard</a> do you still maintain this project? If not so, I would recommend providing access to others ;)</p>",
+                  "url":
+                    "https://github.com/sambernard/react-preload/issues/29#issuecomment-410860172",
+                  "createdAt": "2018-08-06T21:34:25Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "react-powerplug",
+                    "nameWithOwner": "renatorib/react-powerplug",
+                    "url": "https://github.com/renatorib/react-powerplug",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>I think the README (and maybe the docs) are providing wrong information on bind prop names. My component is receiving <code>bindHover</code> instead of formentioned <code>bind</code>.</p>",
+                  "url": "https://github.com/renatorib/react-powerplug/pull/81",
+                  "number": 81,
+                  "createdAt": "2018-04-12T22:54:43Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "floripa-tech-companies",
+                    "nameWithOwner": "thiamsantos/floripa-tech-companies",
+                    "url":
+                      "https://github.com/thiamsantos/floripa-tech-companies",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/thiamsantos/floripa-tech-companies/pull/8",
+                  "number": 8,
+                  "createdAt": "2018-04-17T02:58:54Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "graphql-tools",
+                    "nameWithOwner": "apollographql/graphql-tools",
+                    "url": "https://github.com/apollographql/graphql-tools",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #769.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"319964502\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/apollographql/graphql-tools/issues/769\" href=\"https://github.com/apollographql/graphql-tools/issues/769\">#769</a></p>\n\n<p>TODO:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> If this PR is a new feature, reference an issue where a consensus about the design was reached (not necessary for small changes)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Make sure all of the significant new logic is covered by tests</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Rebase your changes on master so that they can be merged easily</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Make sure all tests and linter rules pass</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Update CHANGELOG.md with your change. Include a description of your change, link to PR (always) and issue (if applicable). Add your CHANGELOG entry under vNEXT. Do not create a new version number for your change yourself.</li>\n</ul>\n",
+                  "url":
+                    "https://github.com/apollographql/graphql-tools/pull/770",
+                  "number": 770,
+                  "createdAt": "2018-05-03T15:16:22Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "blog",
+                    "nameWithOwner": "TallerWebSolutions/blog",
+                    "url": "https://github.com/TallerWebSolutions/blog",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>muito estranho na real... mas é um erro certo, não tinha como estar funcionando</p>",
+                  "url":
+                    "https://github.com/TallerWebSolutions/blog/commit/623102bcdce954cf5347e349e2eda16779176128#commitcomment-7843958",
+                  "createdAt": "2014-09-18T23:08:26Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "pece-distro",
+                    "nameWithOwner": "PECE-project/pece-distro",
+                    "url": "https://github.com/PECE-project/pece-distro",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><g-emoji class=\"g-emoji\" alias=\"heart\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png\">❤️</g-emoji></p>",
+                  "url":
+                    "https://github.com/PECE-project/pece-distro/commit/311a0e5711fe0acbbf62134ba28215c9760fc62c#commitcomment-28321702",
+                  "createdAt": "2018-03-28T23:16:43Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "leoasis/graphql-persisted-document-loader",
+                  "createdAt": "2017-11-27T15:14:51Z",
+                  "url":
+                    "https://github.com/leoasis/graphql-persisted-document-loader",
+                  "description":
+                    "Webpack loader that adds a documentId to a compiled graphql document, which can be used when persisting/retrieving documents",
+                  "stargazers": {
+                    "totalCount": 34,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "tkh44/holen",
+                  "createdAt": "2017-05-03T18:42:00Z",
+                  "url": "https://github.com/tkh44/holen",
+                  "description": "Declarative fetch for React",
+                  "stargazers": {
+                    "totalCount": 154,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "sebas5384/crypty",
+                  "createdAt": "2018-08-08T05:57:31Z",
+                  "url": "https://github.com/sebas5384/crypty",
+                  "description": "Simple encryption and decryption.",
+                  "stargazers": {
+                    "totalCount": 4,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "diegohaz",
+            "name": "Haz",
+            "avatarUrl": "https://avatars3.githubusercontent.com/u/3068563?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description": "roll your own ecommerce store! example:",
+                  "url": "https://github.com/diegohaz/react-stripe-store",
+                  "nameWithOwner": "diegohaz/react-stripe-store",
+                  "createdAt": "2018-08-01T05:51:06Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description":
+                    "🍒⛏📦 Build tool to generate proxy directories.",
+                  "url": "https://github.com/diegohaz/cherry-pick",
+                  "nameWithOwner": "diegohaz/cherry-pick",
+                  "createdAt": "2018-08-02T04:41:15Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "constate",
+                    "nameWithOwner": "diegohaz/constate",
+                    "url": "https://github.com/diegohaz/constate",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 35,
+                    "title": "[WIP] Flow",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>I agree with you about the problem of typings getting out of sync. But since this project has a relatively small API surface, I'd say that it's unlikely to happen. Often. <g-emoji class=\"g-emoji\" alias=\"sweat_smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png\">😅</g-emoji></p>\n<p>I'm already used to Flow so I could easily maintain it. I'm new to TS though, but I'm getting used to it as we implement it on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"341252209\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/reakit/reakit/issues/146\" href=\"https://github.com/reakit/reakit/pull/146\">reakit/reakit#146</a></p>",
+                  "url":
+                    "https://github.com/diegohaz/constate/pull/35#issuecomment-412166173",
+                  "createdAt": "2018-08-10T18:24:22Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "generator-rest-example",
+                    "nameWithOwner": "diegohaz/generator-rest-example",
+                    "url": "https://github.com/diegohaz/generator-rest-example",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 3,
+                    "title":
+                      "How to let users login if the \"login route\" is protected by the master access_token",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Hey, <a class=\"user-mention\" data-hovercard-user-id=\"1671145\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Mikou\">@Mikou</a>. Take a look at this issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"214014481\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/diegohaz/rest/issues/67\" href=\"https://github.com/diegohaz/rest/issues/67\">diegohaz/rest#67</a></p>",
+                  "url":
+                    "https://github.com/diegohaz/generator-rest-example/issues/3#issuecomment-412195973",
+                  "createdAt": "2018-08-10T20:24:24Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "reakit",
+                    "nameWithOwner": "reakit/reakit",
+                    "url": "https://github.com/reakit/reakit",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 183,
+                    "title": "Monorepo",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>After some research, I found a simple workaround.</p>\n<p>If we put an <code>index.js</code> in the root directory of a package, it seems that node module resolution ignores the <code>main</code> field in package.json and use <code>index.js</code> instead (I didn't know that). We just need to make sure to not publish that file to npm.</p>",
+                  "url":
+                    "https://github.com/reakit/reakit/pull/183#issuecomment-412224960",
+                  "createdAt": "2018-08-10T22:42:39Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "reakit",
+                    "nameWithOwner": "reakit/reakit",
+                    "url": "https://github.com/reakit/reakit",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>This PR simplifies <code>Card</code> and makes it more flexible. Before, only <code>img</code> elements could easily bypass Card padding. This exposes a new component called <code>CardFit</code> that can be used to do this job.</p>\n<p>Card preview: <a href=\"https://deploy-preview-176--reakit.netlify.com/components/card\" rel=\"nofollow\">https://deploy-preview-176--reakit.netlify.com/components/card</a><br>\nCardFit preview: <a href=\"https://deploy-preview-176--reakit.netlify.com/components/card/cardfit\" rel=\"nofollow\">https://deploy-preview-176--reakit.netlify.com/components/card/cardfit</a></p>\n<h3>Features</h3>\n<ul>\n<li>Add Card.Fit component</li>\n</ul>\n<h3>BREAKING CHANGES</h3>\n<ul>\n<li>Card styles have been changed</li>\n</ul>",
+                  "url": "https://github.com/reakit/reakit/pull/176",
+                  "number": 176,
+                  "createdAt": "2018-08-07T07:56:49Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "styled-tools",
+                    "nameWithOwner": "diegohaz/styled-tools",
+                    "url": "https://github.com/diegohaz/styled-tools",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url": "https://github.com/diegohaz/styled-tools/pull/45",
+                  "number": 45,
+                  "createdAt": "2018-08-08T00:04:30Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "reakit",
+                    "nameWithOwner": "reakit/reakit",
+                    "url": "https://github.com/reakit/reakit",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"342403627\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/reakit/reakit/issues/154\" href=\"https://github.com/reakit/reakit/issues/154\">#154</a></p>\n<p>This PR transforms the repository into a monorepo using <a href=\"https://github.com/lerna/lerna\">lerna</a>.</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Make a working version of monorepo</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Update repo urls in website (\"improve this page\", \"see the source code\")</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Add a CONTRIBUTING.md with instructions</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Copy reakit CHANGELOG.md to the root</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Update Netlify to point to <code>packages/website/dist</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Test release</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Resolve local dependencies on reakit to <code>src</code> instead of build</li>\n</ul>",
+                  "url": "https://github.com/reakit/reakit/pull/183",
+                  "number": 183,
+                  "createdAt": "2018-08-10T15:18:38Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "redux_samples",
+                    "nameWithOwner": "Excellent1212/redux_samples",
+                    "url": "https://github.com/Excellent1212/redux_samples",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>?</p>",
+                  "url":
+                    "https://github.com/Excellent1212/redux_samples/commit/074c326fdd8f1b6350a4c1f2cf4a6cb6a1f7d06f#commitcomment-29374205",
+                  "createdAt": "2018-06-15T04:11:24Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "webpack-sort-chunks",
+                    "nameWithOwner": "diegohaz/webpack-sort-chunks",
+                    "url": "https://github.com/diegohaz/webpack-sort-chunks",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"1017236\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/satazor\">@satazor</a> Yes, I forgot. Done. <g-emoji class=\"g-emoji\" alias=\"sweat_smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png\">😅</g-emoji></p>",
+                  "url":
+                    "https://github.com/diegohaz/webpack-sort-chunks/commit/278e1b6e9f5ae9d6d01800559a4ac9ac48b9ce76#commitcomment-29850778",
+                  "createdAt": "2018-07-26T21:49:47Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "reakit",
+                    "nameWithOwner": "reakit/reakit",
+                    "url": "https://github.com/reakit/reakit",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>I usually don't go for the former because it's harder to debug (a.k.a. console.log XD) and update the code. That is, if you want to add another line, you'll have to add the brackets anyway. So I just go for the latter by default. Of course, there are exceptions.</p>\n<p>I think that's the same reason I always go for <code>const</code> for functions by default. I don't need to think too much.</p>",
+                  "url":
+                    "https://github.com/reakit/reakit/commit/8ad7f94d4ddfe2cad08bdbda397fec17e564f844#commitcomment-29959546",
+                  "createdAt": "2018-08-04T15:51:28Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "binx/react-stripe-store",
+                  "createdAt": "2018-07-24T14:26:20Z",
+                  "url": "https://github.com/binx/react-stripe-store",
+                  "description": "roll your own ecommerce store! example:",
+                  "stargazers": {
+                    "totalCount": 158,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "CSS", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "raphamorim/react-ape-movie-list-demo",
+                  "createdAt": "2018-08-06T23:37:04Z",
+                  "url":
+                    "https://github.com/raphamorim/react-ape-movie-list-demo",
+                  "description": "Demo with React Ape",
+                  "stargazers": {
+                    "totalCount": 4,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "Moya/Aeryn",
+                  "createdAt": "2016-07-01T20:14:26Z",
+                  "url": "https://github.com/Moya/Aeryn",
+                  "description":
+                    "Server to invite new contributors to a GitHub organization team.",
+                  "stargazers": {
+                    "totalCount": 86,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [{ "name": "Ruby", "__typename": "Language" }],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "TheLarkInn",
+            "name": "Sean Larkin",
+            "avatarUrl": "https://avatars1.githubusercontent.com/u/3408176?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "This is the playbook for \"code-with\" customer or partner engagements",
+                  "url":
+                    "https://github.com/Microsoft/code-with-engineering-playbook",
+                  "nameWithOwner": "Microsoft/code-with-engineering-playbook",
+                  "createdAt": "2018-07-30T12:49:10Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": "Best practices for modern web development",
+                  "url": "https://github.com/TheLarkInn/WebFundamentals",
+                  "nameWithOwner": "TheLarkInn/WebFundamentals",
+                  "createdAt": "2018-08-10T21:05:36Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "webpack",
+                    "nameWithOwner": "webpack/webpack",
+                    "url": "https://github.com/webpack/webpack",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 7834,
+                    "title": " node_modules are not excluded",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>The plugin doesn't ignore transient dependencies I believe. (This may be the cause, however you would have to check with the repository owner)</p>",
+                  "url":
+                    "https://github.com/webpack/webpack/issues/7834#issuecomment-411440103",
+                  "createdAt": "2018-08-08T15:08:32Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "webpack",
+                    "nameWithOwner": "webpack/webpack",
+                    "url": "https://github.com/webpack/webpack",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 7820,
+                    "title": "Example for moved NuGet cache",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>This would be a pretty big breaking change no?</p>",
+                  "url":
+                    "https://github.com/webpack/webpack/issues/7820#issuecomment-411440341",
+                  "createdAt": "2018-08-08T15:09:13Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "webpack",
+                    "nameWithOwner": "webpack/webpack",
+                    "url": "https://github.com/webpack/webpack",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 7570,
+                    "title": "Cache plugin - add typings (new)",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"1365881\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sokra\">@sokra</a> is this allowed to accept both MultiCompiler and Compiler</p>",
+                  "url":
+                    "https://github.com/webpack/webpack/pull/7570#issuecomment-411445451",
+                  "createdAt": "2018-08-08T15:22:55Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "vscode-webpack-extension",
+                    "nameWithOwner": "TheLarkInn/vscode-webpack-extension",
+                    "url":
+                      "https://github.com/TheLarkInn/vscode-webpack-extension",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>This is an implementation of a TreeViewProvider and TreeView which is created to display all of the <em>users</em> modules in a built bundle. (Currently filtering out webpack-dev-server modules).</p>\n<p>This shows the modules at top level and then the <code>module.issuerPath</code> which is an array of issuers from those.</p>",
+                  "url":
+                    "https://github.com/TheLarkInn/vscode-webpack-extension/pull/6",
+                  "number": 6,
+                  "createdAt": "2018-07-24T00:48:22Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "vscode-webpack-extension",
+                    "nameWithOwner": "TheLarkInn/vscode-webpack-extension",
+                    "url":
+                      "https://github.com/TheLarkInn/vscode-webpack-extension",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/TheLarkInn/vscode-webpack-extension/pull/11",
+                  "number": 11,
+                  "createdAt": "2018-07-25T21:57:18Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "webpack",
+                    "nameWithOwner": "webpack/webpack",
+                    "url": "https://github.com/webpack/webpack",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "\n\n\n<p>Add jsdoc types for UnsupportedFeatureWarning class</p>\n\n<p><strong>What kind of change does this PR introduce?</strong><br>\nRefactoring</p>\n\n<p><strong>Did you add tests for your changes?</strong><br>\nN/A</p>\n\n<p><strong>Does this PR introduce a breaking change?</strong><br>\nN/A</p>\n\n<p><strong>What needs to be documented once your changes are merged?</strong><br>\nN/A</p>\n\n",
+                  "url": "https://github.com/webpack/webpack/pull/7866",
+                  "number": 7866,
+                  "createdAt": "2018-08-08T19:05:43Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "webpack",
+                    "nameWithOwner": "webpack/webpack",
+                    "url": "https://github.com/webpack/webpack",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Yes I believe that is true, in this case since its a statsTest it doesn't make a difference but feel free to submit a PR to correct.</p>",
+                  "url":
+                    "https://github.com/webpack/webpack/commit/541ec7ce08536b035e08db00c85a01e7a243fdec#commitcomment-21608901",
+                  "createdAt": "2017-04-03T19:36:25Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "simple-webpack-wasm-example",
+                    "nameWithOwner": "TheLarkInn/simple-webpack-wasm-example",
+                    "url":
+                      "https://github.com/TheLarkInn/simple-webpack-wasm-example",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Nope! This is a branch off of webpack/webpack#next</p>",
+                  "url":
+                    "https://github.com/TheLarkInn/simple-webpack-wasm-example/commit/d60f8bb577f431e4b41c719c278035abfc8b7ce9#commitcomment-25365656",
+                  "createdAt": "2017-11-02T20:57:59Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "parcel",
+                    "nameWithOwner": "parcel-bundler/parcel",
+                    "url": "https://github.com/parcel-bundler/parcel",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Only nit is a project team. I had an open branch but didn't go through with pull. <a class=\"user-mention\" data-hovercard-user-id=\"36407496\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/thejameskyle\">@thejameskyle</a> <a class=\"user-mention\" data-hovercard-user-id=\"19409\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/devongovett\">@devongovett</a> is there a org to specify this for or even an arbitrary medium like GitHub who could help with this?</p>",
+                  "url":
+                    "https://github.com/parcel-bundler/parcel/commit/72c4d47a77d0b4419d54130e2ea2f39ae40b74da#commitcomment-26390744",
+                  "createdAt": "2017-12-20T12:35:33Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "chroma-sdk/chroma-js",
+                  "createdAt": "2017-04-03T10:52:25Z",
+                  "url": "https://github.com/chroma-sdk/chroma-js",
+                  "description":
+                    "JavaScript client for the Razer Chroma REST API",
+                  "stargazers": {
+                    "totalCount": 15,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "TypeScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "bcherny/json-schema-to-typescript",
+                  "createdAt": "2016-03-22T03:56:58Z",
+                  "url": "https://github.com/bcherny/json-schema-to-typescript",
+                  "description": "Compile JSONSchema to TypeScript typings",
+                  "stargazers": {
+                    "totalCount": 622,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "TypeScript", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "Marvin1003/webpack-installer",
+                  "createdAt": "2018-08-09T16:52:22Z",
+                  "url": "https://github.com/Marvin1003/webpack-installer",
+                  "description": "CLI to easily install webpack boilerplates.",
+                  "stargazers": {
+                    "totalCount": 12,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "FernandaBernardo",
+            "name": "Fernanda Bernardo",
+            "avatarUrl": "https://avatars1.githubusercontent.com/u/3588700?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "Logspout adapter for writing Docker container logs to Kafka topics",
+                  "url": "https://github.com/elo7/logspout-kafka",
+                  "nameWithOwner": "elo7/logspout-kafka",
+                  "createdAt": "2018-08-09T18:10:22Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": null,
+                  "url": "https://github.com/elo7/mock-api",
+                  "nameWithOwner": "elo7/mock-api",
+                  "createdAt": "2018-08-10T22:17:54Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "tech-blog",
+                    "nameWithOwner": "elo7/tech-blog",
+                    "url": "https://github.com/elo7/tech-blog",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 146,
+                    "title":
+                      "[hackday-cover-image] Adicionando suporte a cover image ao blog",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"661255\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/leonardosouza\">@leonardosouza</a> eu to tocando esse PR, fique tranquilo <g-emoji class=\"g-emoji\" alias=\"wink\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png\">😉</g-emoji></p>",
+                  "url":
+                    "https://github.com/elo7/tech-blog/pull/146#issuecomment-398720503",
+                  "createdAt": "2018-06-20T11:44:19Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "diabetes-mais-doce",
+                    "nameWithOwner": "FernandaBernardo/diabetes-mais-doce",
+                    "url":
+                      "https://github.com/FernandaBernardo/diabetes-mais-doce",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 11,
+                    "title": "Refatorar o projeto para React Native",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Olá <a class=\"user-mention\" data-hovercard-user-id=\"2914170\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/raisiqueira\">@raisiqueira</a>, acho a ideia bem legal! Mas no momento estou um pouco sem tempo para focar nesse projeto. Gostaria de me ajudar com isso?</p>",
+                  "url":
+                    "https://github.com/FernandaBernardo/diabetes-mais-doce/issues/11#issuecomment-400649457",
+                  "createdAt": "2018-06-27T12:10:40Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "tech-blog",
+                    "nameWithOwner": "elo7/tech-blog",
+                    "url": "https://github.com/elo7/tech-blog",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 206,
+                    "title": "Correção texto",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"190265\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tcelestino\">@tcelestino</a> o que acha de deixar:</p>\n<p><code>[...] mesmo **que** algumas dessas tecnologias não **estejam** [...]</code></p>\n<p>?</p>",
+                  "url":
+                    "https://github.com/elo7/tech-blog/pull/206#issuecomment-409545575",
+                  "createdAt": "2018-08-01T11:37:26Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "tech-blog",
+                    "nameWithOwner": "elo7/tech-blog",
+                    "url": "https://github.com/elo7/tech-blog",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><g-emoji class=\"g-emoji\" alias=\"+1\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png\">👍</g-emoji>  <a class=\"user-mention\" data-hovercard-user-id=\"1765898\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/AlineLee\">@AlineLee</a></p>\n<p><a class=\"user-mention\" data-hovercard-user-id=\"3588700\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/FernandaBernardo\">@FernandaBernardo</a></p>",
+                  "url": "https://github.com/elo7/tech-blog/pull/195",
+                  "number": 195,
+                  "createdAt": "2018-04-13T19:42:48Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "tech-blog",
+                    "nameWithOwner": "elo7/tech-blog",
+                    "url": "https://github.com/elo7/tech-blog",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><g-emoji class=\"g-emoji\" alias=\"+1\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png\">👍</g-emoji> <a class=\"user-mention\" data-hovercard-user-id=\"190265\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tcelestino\">@tcelestino</a></p>\n<p><a class=\"user-mention\" data-hovercard-user-id=\"3588700\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/FernandaBernardo\">@FernandaBernardo</a></p>",
+                  "url": "https://github.com/elo7/tech-blog/pull/198",
+                  "number": 198,
+                  "createdAt": "2018-05-07T14:10:55Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "tech-blog",
+                    "nameWithOwner": "elo7/tech-blog",
+                    "url": "https://github.com/elo7/tech-blog",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"3588700\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/FernandaBernardo\">@FernandaBernardo</a></p>",
+                  "url": "https://github.com/elo7/tech-blog/pull/203",
+                  "number": 203,
+                  "createdAt": "2018-06-04T21:57:30Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "mamute",
+                    "nameWithOwner": "caelum/mamute",
+                    "url": "https://github.com/caelum/mamute",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>Yes, I forgot it</p>",
+                  "url":
+                    "https://github.com/caelum/mamute/commit/f11f793b677511a8ec9ce2764b481fe0e50f0e1a#commitcomment-6009988",
+                  "createdAt": "2014-04-14T23:43:09Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "danistefanovic/build-your-own-x",
+                  "createdAt": "2018-05-09T12:03:18Z",
+                  "url": "https://github.com/danistefanovic/build-your-own-x",
+                  "description": "🤓 Build your own (insert technology here)",
+                  "stargazers": {
+                    "totalCount": 36919,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "mikesprague/udacity-nanodegrees",
+                  "createdAt": "2016-04-03T17:06:38Z",
+                  "url": "https://github.com/mikesprague/udacity-nanodegrees",
+                  "description":
+                    ":mortar_board: List of Udacity Nanodegree programs with links to the free courses in their curricula",
+                  "stargazers": {
+                    "totalCount": 3054,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "pomber/didact",
+                  "createdAt": "2017-04-11T17:22:23Z",
+                  "url": "https://github.com/pomber/didact",
+                  "description": "A DIY guide to build your own React",
+                  "stargazers": {
+                    "totalCount": 1206,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "willianjusten",
+            "name": "Willian Justen ",
+            "avatarUrl": "https://avatars0.githubusercontent.com/u/3991845?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "A simple live editor with very few lines of code.",
+                  "url": "https://github.com/willianjusten/dumb-codepen",
+                  "nameWithOwner": "willianjusten/dumb-codepen",
+                  "createdAt": "2018-05-28T17:50:24Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": "Files to my course about Greensock on Udemy",
+                  "url": "https://github.com/willianjusten/greensock-course",
+                  "nameWithOwner": "willianjusten/greensock-course",
+                  "createdAt": "2018-08-04T15:57:39Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "willianjusten.com.br",
+                    "nameWithOwner": "willianjusten/willianjusten.com.br",
+                    "url":
+                      "https://github.com/willianjusten/willianjusten.com.br",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 53,
+                    "title": "Remover o zepto que nem precisa",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Sim... Mas como eu pretendia mudar o tema, eu meio deixei para lá.</p>",
+                  "url":
+                    "https://github.com/willianjusten/willianjusten.com.br/issues/53#issuecomment-409222395",
+                  "createdAt": "2018-07-31T13:33:50Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "willianjusten.com.br",
+                    "nameWithOwner": "willianjusten/willianjusten.com.br",
+                    "url":
+                      "https://github.com/willianjusten/willianjusten.com.br",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 53,
+                    "title": "Remover o zepto que nem precisa",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Se quiser contribuir, vai na fé =D<br>\nOs lugares que usam são os apontados ali.</p>",
+                  "url":
+                    "https://github.com/willianjusten/willianjusten.com.br/issues/53#issuecomment-409329788",
+                  "createdAt": "2018-07-31T18:54:20Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "greensock-course",
+                    "nameWithOwner": "willianjusten/greensock-course",
+                    "url": "https://github.com/willianjusten/greensock-course",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1,
+                    "title": "Eu encontrei um pequeno bug",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Opa <a class=\"user-mention\" data-hovercard-user-id=\"34720135\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/AlexandreRStos\">@AlexandreRStos</a> , é sim, para explicar que o comando <code>.set()</code> define a posição do elemento onde você desejar.</p>\n<p>Você tem o curso? Fazendo o curso dá para entender a razão disso xD</p>",
+                  "url":
+                    "https://github.com/willianjusten/greensock-course/issues/1#issuecomment-411085391",
+                  "createdAt": "2018-08-07T14:53:56Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "willianjusten.com.br",
+                    "nameWithOwner": "willianjusten/willianjusten.com.br",
+                    "url":
+                      "https://github.com/willianjusten/willianjusten.com.br",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>Automatically generated by Netlify CMS</p>",
+                  "url":
+                    "https://github.com/willianjusten/willianjusten.com.br/pull/81",
+                  "number": 81,
+                  "createdAt": "2018-06-05T13:28:41Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "willianjusten.com.br",
+                    "nameWithOwner": "willianjusten/willianjusten.com.br",
+                    "url":
+                      "https://github.com/willianjusten/willianjusten.com.br",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>Automatically generated by Netlify CMS</p>",
+                  "url":
+                    "https://github.com/willianjusten/willianjusten.com.br/pull/82",
+                  "number": 82,
+                  "createdAt": "2018-07-24T02:16:09Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "willianjusten.com.br",
+                    "nameWithOwner": "willianjusten/willianjusten.com.br",
+                    "url":
+                      "https://github.com/willianjusten/willianjusten.com.br",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>Automatically generated by Netlify CMS</p>",
+                  "url":
+                    "https://github.com/willianjusten/willianjusten.com.br/pull/83",
+                  "number": 83,
+                  "createdAt": "2018-07-24T12:27:06Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "spotify-wrapper",
+                    "nameWithOwner": "willianjusten/spotify-wrapper",
+                    "url": "https://github.com/willianjusten/spotify-wrapper",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Aqui nós atualizamos o <code>sinon</code> e <code>sinon-chai</code>, além de removermos o <code>sinon-stub-promise</code>, que já não é mais necessário.</p>\n<p>Você pode fazer essa atualização de várias formas, uma super simples é desinstalar e instalar, assim já pega a última versão:</p>\n<pre><code>npm uninstall sinon sinon-chai sinon-stub-promise --save-dev\nnpm install sinon sinon-chai --save-dev\n</code></pre>",
+                  "url":
+                    "https://github.com/willianjusten/spotify-wrapper/commit/aa9e769454226e26639685c6391f6a61a0b940d9#commitcomment-29737729",
+                  "createdAt": "2018-07-17T16:37:28Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "spotify-wrapper",
+                    "nameWithOwner": "willianjusten/spotify-wrapper",
+                    "url": "https://github.com/willianjusten/spotify-wrapper",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Se reparar, eu to sempre verificando o mesmo valor, já que a Promise tá sempre resolvendo para o mesmo valor, de acordo com a linha L21, mas se você desejar, pode resolver as Promises de diferentes formas dentro de cada bloco.</p>",
+                  "url":
+                    "https://github.com/willianjusten/spotify-wrapper/commit/aa9e769454226e26639685c6391f6a61a0b940d9#commitcomment-29737754",
+                  "createdAt": "2018-07-17T16:39:58Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "spotify-wrapper",
+                    "nameWithOwner": "willianjusten/spotify-wrapper",
+                    "url": "https://github.com/willianjusten/spotify-wrapper",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Como nossa preocupação nesse arquivo não está nos resultados obtidos da Promise, mas sim nos outros métodos estarem rodando, eu posso simplesmente retornar uma Promise vazia.</p>",
+                  "url":
+                    "https://github.com/willianjusten/spotify-wrapper/commit/aa9e769454226e26639685c6391f6a61a0b940d9#commitcomment-29737765",
+                  "createdAt": "2018-07-17T16:40:36Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "diogocezar/sandybox",
+                  "createdAt": "2018-07-24T17:35:02Z",
+                  "url": "https://github.com/diogocezar/sandybox",
+                  "description":
+                    "This is a little project to show combined HTML, CSS and JavaScript projects.",
+                  "stargazers": {
+                    "totalCount": 35,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "CSS", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "vaneenige/unswitch",
+                  "createdAt": "2018-07-22T20:12:08Z",
+                  "url": "https://github.com/vaneenige/unswitch",
+                  "description":
+                    "🕹 A tiny event handler for Switch controllers!",
+                  "stargazers": {
+                    "totalCount": 517,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "andyhu/transliteration",
+                  "createdAt": "2014-08-27T07:45:46Z",
+                  "url": "https://github.com/andyhu/transliteration",
+                  "description":
+                    "UTF-8 to ASCII transliteration / slugify module for node.js, browser, Web Worker, React Native, Electron and CLI.",
+                  "stargazers": {
+                    "totalCount": 248,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "gustavoisensee",
+            "name": "Gustavo Isensee",
+            "avatarUrl": "https://avatars3.githubusercontent.com/u/4410573?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "The aim of this project is create a simple boilerplate for ReactJS",
+                  "url":
+                    "https://github.com/gustavoisensee/react-template-create-app",
+                  "nameWithOwner": "gustavoisensee/react-template-create-app",
+                  "createdAt": "2018-02-08T23:43:38Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": "⚛ React component for Chartist.js",
+                  "url": "https://github.com/gustavoisensee/react-chartist",
+                  "nameWithOwner": "gustavoisensee/react-chartist",
+                  "createdAt": "2018-08-01T13:29:46Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "gplus-elements",
+                    "nameWithOwner": "social-elements/gplus-elements",
+                    "url": "https://github.com/social-elements/gplus-elements",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 4,
+                    "title": "add new element",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML": "<p>ok, I'll do gplus with javascript too.</p>",
+                  "url":
+                    "https://github.com/social-elements/gplus-elements/pull/4#issuecomment-24154673",
+                  "createdAt": "2013-09-10T12:10:03Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "phantomjs",
+                    "nameWithOwner": "ariya/phantomjs",
+                    "url": "https://github.com/ariya/phantomjs",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 14516,
+                    "title": "Can't capture ",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>Hello <a class=\"user-mention\" data-hovercard-user-id=\"362176\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/kevinquillen\">@kevinquillen</a>, Can you solved your problem?<br>\nI'm having the same problem and I can't solve it yet.</p>",
+                  "url":
+                    "https://github.com/ariya/phantomjs/issues/14516#issuecomment-245061950",
+                  "createdAt": "2016-09-06T19:27:25Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "caniuse",
+                    "nameWithOwner": "Fyrd/caniuse",
+                    "url": "https://github.com/Fyrd/caniuse",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1960,
+                    "title": "add support for Array.prototype.find.",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML": "<p>UP</p>",
+                  "url":
+                    "https://github.com/Fyrd/caniuse/issues/1960#issuecomment-293283550",
+                  "createdAt": "2017-04-11T14:36:26Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "karma-chai-http",
+                    "nameWithOwner": "lucasfcosta/karma-chai-http",
+                    "url": "https://github.com/lucasfcosta/karma-chai-http",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/lucasfcosta/karma-chai-http/pull/2",
+                  "number": 2,
+                  "createdAt": "2016-09-02T18:02:32Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "javascript",
+                    "nameWithOwner": "airbnb/javascript",
+                    "url": "https://github.com/airbnb/javascript",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>Imported from new prop-types module.</p>",
+                  "url": "https://github.com/airbnb/javascript/pull/1450",
+                  "number": 1450,
+                  "createdAt": "2017-06-13T04:01:26Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "frontend-tech-test",
+                    "nameWithOwner": "Travix-International/frontend-tech-test",
+                    "url":
+                      "https://github.com/Travix-International/frontend-tech-test",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Hello guys,</p>\n<p>I've talked to Resha from Arrows Group and She sent me this test, I've done it right now and I'm doing a pull request.</p>\n<p>I have some considerations:</p>\n<ul>\n<li>I've separated in two applications: app (frontend) and api (backend).</li>\n<li>On backend I've done with nodejs, express and mongo (this db is online and its config is api/src/database/index) in case you want to run in your own database, and I've made integration tests with Jest and supertest.</li>\n<li>On frontend I've used: React, Redux, Webpack, Babel, ES6, Sass, and a lot of tests, the tests I've made with Jest and nock, I've made component's tests (just snapshot, but I could make more comparisons with Shallow or enzyne), I've made tests of actions and reducers as well.</li>\n<li>both projects have readme but basically we need to enter in api and then app and execute npm install and then npm run to run both project, they are apps totally separated.</li>\n<li>I didn't use any kind of boilerplate, I've done everything with my own hands, except for readme and package.json that I've copied from other projects of mine.</li>\n<li>On layout I've done something very simple and easy, not so complex but responsive.</li>\n</ul>\n<p>So, I think that's it, I'm looking forward to receive a feedback.</p>\n<p>Best regards,<br>\nGustavo Isensee</p>",
+                  "url":
+                    "https://github.com/Travix-International/frontend-tech-test/pull/3",
+                  "number": 3,
+                  "createdAt": "2017-07-05T19:41:30Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "eslint/eslint",
+                  "createdAt": "2013-06-29T23:59:48Z",
+                  "url": "https://github.com/eslint/eslint",
+                  "description":
+                    "A fully pluggable tool for identifying and reporting on patterns in JavaScript",
+                  "stargazers": {
+                    "totalCount": 12115,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "pedronauck/docz",
+                  "createdAt": "2018-03-17T04:24:10Z",
+                  "url": "https://github.com/pedronauck/docz",
+                  "description":
+                    "✍🏻It has never been so easy to document your things!",
+                  "stargazers": {
+                    "totalCount": 8913,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "TypeScript", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "lucasfcosta/wren-8080",
+                  "createdAt": "2018-06-16T08:32:08Z",
+                  "url": "https://github.com/lucasfcosta/wren-8080",
+                  "description":
+                    "An Intel 8080 disassembler. Named after Sir Christopher Wren.",
+                  "stargazers": {
+                    "totalCount": 1,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "bruno-farias",
+            "name": "Bruno Farias",
+            "avatarUrl": "https://avatars2.githubusercontent.com/u/5460340?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description": null,
+                  "url": "https://github.com/bruno-farias/fractory",
+                  "nameWithOwner": "bruno-farias/fractory",
+                  "createdAt": "2018-07-12T00:20:47Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": null,
+                  "url": "https://github.com/bruno-farias/fractory-front",
+                  "nameWithOwner": "bruno-farias/fractory-front",
+                  "createdAt": "2018-07-16T04:52:28Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "starrr",
+                    "nameWithOwner": "dobtco/starrr",
+                    "url": "https://github.com/dobtco/starrr",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 23,
+                    "title": "How to initialize multiple star ratings",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML": "<p>Thanks!</p>",
+                  "url":
+                    "https://github.com/dobtco/starrr/issues/23#issuecomment-230520868",
+                  "createdAt": "2016-07-05T15:56:08Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "turtle",
+                    "nameWithOwner": "kjdion84/turtle",
+                    "url": "https://github.com/kjdion84/turtle",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 3,
+                    "title":
+                      "How to use own resource views instead of package default?",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>I managed to make work:</p>\n<ul>\n<li>Created a new Controller extending Kjdion84\\Turtle\\Controllers\\AppController;</li>\n<li>Override home method to render the correct view;</li>\n<li>On turtle config, on controllers section changed app to use the created controller</li>\n<li>profit</li>\n</ul>",
+                  "url":
+                    "https://github.com/kjdion84/turtle/issues/3#issuecomment-330106912",
+                  "createdAt": "2017-09-18T00:58:46Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "webtorrent-desktop",
+                    "nameWithOwner": "webtorrent/webtorrent-desktop",
+                    "url": "https://github.com/webtorrent/webtorrent-desktop",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1176,
+                    "title": "App doesn't start up",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>same here, running elementary OS 0.4.1 Loki Linux 4.10.0-38-generic</p>",
+                  "url":
+                    "https://github.com/webtorrent/webtorrent-desktop/issues/1176#issuecomment-341944372",
+                  "createdAt": "2017-11-05T02:25:44Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "phpA-B",
+                    "nameWithOwner": "briancray/phpA-B",
+                    "url": "https://github.com/briancray/phpA-B",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url": "https://github.com/briancray/phpA-B/pull/18",
+                  "number": 18,
+                  "createdAt": "2017-06-13T18:31:52Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "empresas-que-usam-laravel-no-brasil",
+                    "nameWithOwner":
+                      "especializati/empresas-que-usam-laravel-no-brasil",
+                    "url":
+                      "https://github.com/especializati/empresas-que-usam-laravel-no-brasil",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/especializati/empresas-que-usam-laravel-no-brasil/pull/15",
+                  "number": 15,
+                  "createdAt": "2017-10-11T13:37:42Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "imdbtouch",
+                    "nameWithOwner": "bruno-farias/imdbtouch",
+                    "url": "https://github.com/bruno-farias/imdbtouch",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>I hope it's fun to review this.</p>",
+                  "url": "https://github.com/bruno-farias/imdbtouch/pull/1",
+                  "number": 1,
+                  "createdAt": "2017-10-30T02:36:35Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "pulkitjalan/google-apiclient",
+                  "createdAt": "2015-01-18T10:43:12Z",
+                  "url": "https://github.com/pulkitjalan/google-apiclient",
+                  "description":
+                    "Google api php client wrapper with Cloud Platform and Laravel support",
+                  "stargazers": {
+                    "totalCount": 108,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [{ "name": "PHP", "__typename": "Language" }],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "flyingluscas/pagarme-laravel",
+                  "createdAt": "2017-05-15T04:15:13Z",
+                  "url": "https://github.com/flyingluscas/pagarme-laravel",
+                  "description": "Pagar.me SDK for Laravel applications.",
+                  "stargazers": {
+                    "totalCount": 11,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [{ "name": "PHP", "__typename": "Language" }],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "pagarme/pagarme-php",
+                  "createdAt": "2013-03-12T19:01:34Z",
+                  "url": "https://github.com/pagarme/pagarme-php",
+                  "description": ":blue_heart: Pagar.me's PHP API",
+                  "stargazers": {
+                    "totalCount": 137,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "PHP", "__typename": "Language" },
+                      { "name": "Gherkin", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "mauscoelho",
+            "name": "Maurício Coelho",
+            "avatarUrl": "https://avatars3.githubusercontent.com/u/5712300?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "React application to improve the way that you see your story viewers on Instagram",
+                  "url": "https://github.com/mauscoelho/story-viewer",
+                  "nameWithOwner": "mauscoelho/story-viewer",
+                  "createdAt": "2018-08-03T14:55:03Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": null,
+                  "url": "https://github.com/mauscoelho/story-viewer-server",
+                  "nameWithOwner": "mauscoelho/story-viewer-server",
+                  "createdAt": "2018-08-05T23:53:56Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "react-apollo",
+                    "nameWithOwner": "apollographql/react-apollo",
+                    "url": "https://github.com/apollographql/react-apollo",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1411,
+                    "title": "how to pass query variables to query ",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"27327503\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/julianmnst\">@julianmnst</a> I didn't understand your question, but if you are trying to do a request without a <code>component</code> you can see the query interface <a href=\"https://www.apollographql.com/docs/react/api/apollo-client.html#ApolloClient.query\" rel=\"nofollow\">here</a></p>\n<p>it's something like that</p>\n<div class=\"highlight highlight-source-js\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-smi\">client</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\"><span class=\"pl-pds\">'</span>...<span class=\"pl-pds\">'</span></span>;\n\n<span class=\"pl-k\">await</span> result <span class=\"pl-k\">=</span> <span class=\"pl-smi\">client</span>.<span class=\"pl-en\">query</span>({ query<span class=\"pl-k\">:</span> <span class=\"pl-c1\">YOUR_QUERY</span>, variables<span class=\"pl-k\">:</span> { });</pre></div>",
+                  "url":
+                    "https://github.com/apollographql/react-apollo/issues/1411#issuecomment-383691828",
+                  "createdAt": "2018-04-23T19:20:38Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "instagram-private-api",
+                    "nameWithOwner": "huttarichard/instagram-private-api",
+                    "url":
+                      "https://github.com/huttarichard/instagram-private-api",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 531,
+                    "title": "Is it possible to get \"my story viewers\"?",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>With <code>InstagramV1.Feed.UserStory(session, [myId])</code> I got my first 5 viewers, but I would like to know the endpoint to the get <code>more viewers</code> and try to get the full list :)</p>\n<p>The response contains these fields <code>viewer_count</code> and <code>viewer_cursor: 5</code>. So, should be possible to get all viewers</p>\n<p>I tried to get the requests with Charles proxy but I can't on Android :( if someone can get the endpoints with the proxy it will be great :D</p>",
+                  "url":
+                    "https://github.com/huttarichard/instagram-private-api/issues/531#issuecomment-409501872",
+                  "createdAt": "2018-08-01T08:52:38Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "instagram-private-api",
+                    "nameWithOwner": "huttarichard/instagram-private-api",
+                    "url":
+                      "https://github.com/huttarichard/instagram-private-api",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 536,
+                    "title": "Missing build script",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"1809268\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/huttarichard\">@huttarichard</a> you can use <a href=\"https://docs.npmjs.com/cli/link\" rel=\"nofollow\">npm link</a> in your local environment to test</p>",
+                  "url":
+                    "https://github.com/huttarichard/instagram-private-api/issues/536#issuecomment-409843997",
+                  "createdAt": "2018-08-02T08:11:15Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "instagram-private-api",
+                    "nameWithOwner": "mauscoelho/instagram-private-api",
+                    "url":
+                      "https://github.com/mauscoelho/instagram-private-api",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/mauscoelho/instagram-private-api/pull/1",
+                  "number": 1,
+                  "createdAt": "2018-08-05T19:19:28Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "story-viewer-server",
+                    "nameWithOwner": "mauscoelho/story-viewer-server",
+                    "url": "https://github.com/mauscoelho/story-viewer-server",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/mauscoelho/story-viewer-server/pull/1",
+                  "number": 1,
+                  "createdAt": "2018-08-06T14:34:49Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "story-viewer-server",
+                    "nameWithOwner": "mauscoelho/story-viewer-server",
+                    "url": "https://github.com/mauscoelho/story-viewer-server",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url":
+                    "https://github.com/mauscoelho/story-viewer-server/pull/2",
+                  "number": 2,
+                  "createdAt": "2018-08-06T21:22:21Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "TypeStrong/ts-loader",
+                  "createdAt": "2015-01-21T00:00:16Z",
+                  "url": "https://github.com/TypeStrong/ts-loader",
+                  "description": "TypeScript loader for webpack",
+                  "stargazers": {
+                    "totalCount": 1501,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "TypeScript", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "Vue", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "mgp25/Instagram-API",
+                  "createdAt": "2015-11-16T13:49:36Z",
+                  "url": "https://github.com/mgp25/Instagram-API",
+                  "description": "Instagram's private API",
+                  "stargazers": {
+                    "totalCount": 2944,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "PHP", "__typename": "Language" },
+                      { "name": "Shell", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "Dockerfile", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "mui-org/material-ui",
+                  "createdAt": "2014-08-18T19:11:54Z",
+                  "url": "https://github.com/mui-org/material-ui",
+                  "description":
+                    "React components that implement Google's Material Design.",
+                  "stargazers": {
+                    "totalCount": 39262,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "Shell", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" },
+                      { "name": "TypeScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "lucasfcosta",
+            "name": "Lucas Fernandes da Costa",
+            "avatarUrl": "https://avatars1.githubusercontent.com/u/6868147?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "An Intel 8080 disassembler. Named after Sir Christopher Wren.",
+                  "url": "https://github.com/lucasfcosta/wren-8080",
+                  "nameWithOwner": "lucasfcosta/wren-8080",
+                  "createdAt": "2018-06-16T08:32:08Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description":
+                    "My personal boilerplate for building JavaScript packages.",
+                  "url": "https://github.com/lucasfcosta/package-boilerplate",
+                  "nameWithOwner": "lucasfcosta/package-boilerplate",
+                  "createdAt": "2018-06-16T08:36:52Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "assertion-error",
+                    "nameWithOwner": "chaijs/assertion-error",
+                    "url": "https://github.com/chaijs/assertion-error",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 15,
+                    "title": "fix #14 ",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML": "<p>LGTM. Shall I hit the merge button?</p>",
+                  "url":
+                    "https://github.com/chaijs/assertion-error/pull/15#issuecomment-402402882",
+                  "createdAt": "2018-07-04T08:22:00Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "recompose",
+                    "nameWithOwner": "acdlite/recompose",
+                    "url": "https://github.com/acdlite/recompose",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 21,
+                    "title": "Conditional or Switch HOC?",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p>I also think it would be very useful and I'm happy to implement it if needed.</p>",
+                  "url":
+                    "https://github.com/acdlite/recompose/issues/21#issuecomment-405279735",
+                  "createdAt": "2018-07-16T15:08:28Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "forum",
+                    "nameWithOwner": "frontendbr/forum",
+                    "url": "https://github.com/frontendbr/forum",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1182,
+                    "title":
+                      "Melhores práticas para envio de dados ao servidor",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"4699689\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/munizart\">@munizart</a> acho uma boa dica, mas acredito que o termo correto não seria short-circuit, visto que short-circuit é se aproveitar de como é feito o evaluate dos operadores booleanos, por exemplo:</p>\n<div class=\"highlight highlight-source-js\"><pre><span class=\"pl-c\"><span class=\"pl-c\">//</span> Evalua myFunc apenas se data for truthy</span>\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> Já que o operador &amp;&amp; denota que ambos devem ser truthy, não tem nenhum motivo pra evaluar o segundo termo</span>\ndata <span class=\"pl-k\">&amp;&amp;</span> <span class=\"pl-en\">myFunc</span>(data);\n\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> Usa o valor default se req.body.data for falsy</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-c1\">myVar</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">req</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-c1\">data</span> <span class=\"pl-k\">||</span> defaultValue</pre></div>\n<p>A <code>maybe</code> monad é de fato interessante usar pra isso também. Curto bastante o jeito que rust trata isso com as <code>Options</code> (te obriga a fazer pattern matching tipo o que um <code>Maybe</code> em uma linguagem funcional faria) lol</p>\n<p>Sobre os pontos de extensibilidade é também uma prática útil (IMO) que vai de acordo com os bons princípios de evolutionary design &amp; loosely coupling, ainda no exemplo que você passou eu curto bastante fazer currying em casos como esse:</p>\n<p><g-emoji class=\"g-emoji\" alias=\"warning\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png\">⚠️</g-emoji> <strong>Alerta de heavy-lifting de programação funcional abaixo</strong></p>\n<div class=\"highlight highlight-source-js\"><pre><span class=\"pl-k\">const</span> <span class=\"pl-c1\">isNull</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">i</span> <span class=\"pl-k\">=&gt;</span> i <span class=\"pl-k\">===</span> <span class=\"pl-c1\">null</span>;\n<span class=\"pl-k\">const</span> <span class=\"pl-c1\">minLength3</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">v</span> <span class=\"pl-k\">=&gt;</span> v <span class=\"pl-k\">&amp;&amp;</span> <span class=\"pl-smi\">v</span>.<span class=\"pl-c1\">length</span> <span class=\"pl-k\">&gt;=</span> <span class=\"pl-c1\">3</span> <span class=\"pl-k\">?</span> <span class=\"pl-c1\">null</span> <span class=\"pl-k\">:</span> <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Minimum length is 3<span class=\"pl-pds\">\"</span></span>; \n<span class=\"pl-k\">const</span> <span class=\"pl-c1\">isNumber</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">v</span> <span class=\"pl-k\">=&gt;</span> <span class=\"pl-k\">!</span><span class=\"pl-c1\">isNaN</span>(v) <span class=\"pl-k\">?</span> <span class=\"pl-c1\">null</span> <span class=\"pl-k\">:</span> <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Must be a number<span class=\"pl-pds\">\"</span></span>;\n\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> A função abaixo recebe um array de validadores: funções que retornam `null` ou uma string com erro</span>\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> Ela então retorna uma função que recebe uma função `fn`, essa função retornada é a que vamos usar para validar os valores</span>\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> A função retornada na segunda chamada recebe um valor `v` e valida-o rodando todos os validators sobre ele</span>\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> Se todos os validators forem `null` ela chama a função `fn` que você passou, caso contrário joga um erro</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-c1\">withValidators</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">validators</span> <span class=\"pl-k\">=&gt;</span> {\n  <span class=\"pl-k\">return</span> <span class=\"pl-smi\">fn</span> <span class=\"pl-k\">=&gt;</span> <span class=\"pl-smi\">v</span> <span class=\"pl-k\">=&gt;</span> { <span class=\"pl-k\">/</span>\n    <span class=\"pl-k\">const</span> <span class=\"pl-c1\">errors</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">validators</span>.<span class=\"pl-en\">map</span>(<span class=\"pl-smi\">validator</span> <span class=\"pl-k\">=&gt;</span> <span class=\"pl-en\">validator</span>(v))\n    <span class=\"pl-k\">const</span> <span class=\"pl-c1\">passing</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">errors</span>.<span class=\"pl-en\">every</span>(isNull);\n    <span class=\"pl-k\">return</span> passing <span class=\"pl-k\">?</span> <span class=\"pl-en\">fn</span>(v) <span class=\"pl-k\">:</span> <span class=\"pl-k\">throw</span> <span class=\"pl-k\">new</span> <span class=\"pl-en\">Error</span>(errors[<span class=\"pl-c1\">0</span>])\n  }\n}\n\n<span class=\"pl-c\"><span class=\"pl-c\">//</span> Então supondo que a função `send` envia dados para o servidor:</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-c1\">sendIfValid</span> <span class=\"pl-k\">=</span> <span class=\"pl-en\">withValidators</span>(minLength3, isNumber)(send);\n\n<span class=\"pl-k\">return</span> <span class=\"pl-k\">&lt;</span>MyButton onClick<span class=\"pl-k\">=</span>{() <span class=\"pl-k\">=&gt;</span> <span class=\"pl-en\">sendIfValid</span>(data)} <span class=\"pl-k\">/</span><span class=\"pl-k\">&gt;</span></pre></div>\n<p>Da forma que eu mostrei acima você pode compor suas funcões e de uma forma simples e manter todas elas puras, o que facilita muito na hora de testar porque você pode testar em diferentes granularidades, tornando TDD muito mais fácil.</p>\n<p>No caso acima você poderia testar os <code>validators</code> primeiro e depois testar se o enhancer <code>withValidators</code> de fato só chama a função passada se todos os validators retornam <code>null</code>.</p>\n<p>Um bom exemplo disso pra quem usa React é o <a href=\"https://github.com/acdlite/recompose/blob/master/docs/API.md\">recompose</a>.</p>\n<p><a href=\"http://lucasfcosta.com/\" rel=\"nofollow\">E pra quem quiser ler mais sobre Lambda Calculus tenho escrito vários posts introdutórios no meu blog</a>. Entender Lambda Calculus e conceitos básicos e gerais de computabilidade melhor muito sua habilidade de raciocínio e pensamento funcional.</p>\n<p>PS: <a class=\"user-mention\" data-hovercard-user-id=\"4699689\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/munizart\">@munizart</a> Manda um abraço pra galera da Chaordic pfv, principalmente pro Bernardo. Sdds dessa cidade e dos migos <g-emoji class=\"g-emoji\" alias=\"heart\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png\">❤️</g-emoji></p>",
+                  "url":
+                    "https://github.com/frontendbr/forum/issues/1182#issuecomment-411655002",
+                  "createdAt": "2018-08-09T06:47:28Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "chaijs.github.io",
+                    "nameWithOwner": "chaijs/chaijs.github.io",
+                    "url": "https://github.com/chaijs/chaijs.github.io",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Since this is the org's main github pages repo, the site is built from <code>master</code>, not <code>gh-pages</code>.</p>",
+                  "url": "https://github.com/chaijs/chaijs.github.io/pull/163",
+                  "number": 163,
+                  "createdAt": "2018-03-14T08:59:20Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "chaijs.github.io",
+                    "nameWithOwner": "chaijs/chaijs.github.io",
+                    "url": "https://github.com/chaijs/chaijs.github.io",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Since github already overwrites <code>site.url</code>, we don't need to prepend <code>site.github.url</code>.</p>\n<blockquote>\n<p><strong>GitHub Pages overrides the \"Site Source\" configuration value</strong>, so if you locate your files anywhere other than the root directory, your site may not build correctly.</p>\n</blockquote>\n<p>As you can see, before this PR, we have a duplicate url there:</p>\n<p><a target=\"_blank\" href=\"https://user-images.githubusercontent.com/6868147/37392615-86a390dc-2766-11e8-9800-ccc6aa4c09a1.png\"><img width=\"529\" alt=\"screen shot 2018-03-14 at 09 02 59\" src=\"https://user-images.githubusercontent.com/6868147/37392615-86a390dc-2766-11e8-9800-ccc6aa4c09a1.png\" style=\"max-width:100%;\"></a></p>",
+                  "url": "https://github.com/chaijs/chaijs.github.io/pull/164",
+                  "number": 164,
+                  "createdAt": "2018-03-14T09:03:20Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "lucasfcosta.github.io",
+                    "nameWithOwner": "lucasfcosta/lucasfcosta.github.io",
+                    "url":
+                      "https://github.com/lucasfcosta/lucasfcosta.github.io",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>This PR is open for reviews.</p>\n<p>Thanks! <g-emoji class=\"g-emoji\" alias=\"smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png\">😄</g-emoji></p>",
+                  "url":
+                    "https://github.com/lucasfcosta/lucasfcosta.github.io/pull/22",
+                  "number": 22,
+                  "createdAt": "2018-05-27T18:42:00Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "dotfiles",
+                    "nameWithOwner": "lucasfcosta/dotfiles",
+                    "url": "https://github.com/lucasfcosta/dotfiles",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>I was tweaking some configs and this ended up happening somehow.<br>\nCrazy stuff</p>",
+                  "url":
+                    "https://github.com/lucasfcosta/dotfiles/commit/348511618c80c897b102a775816f7e78bbdf229b#commitcomment-19239996",
+                  "createdAt": "2016-09-30T12:11:06Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "dotfiles",
+                    "nameWithOwner": "lucasfcosta/dotfiles",
+                    "url": "https://github.com/lucasfcosta/dotfiles",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Hi <a class=\"user-mention\" data-hovercard-user-id=\"8083459\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ryanoasis\">@ryanoasis</a>!<br>\nThank you very much for taking a look at this <g-emoji class=\"g-emoji\" alias=\"smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png\">😄</g-emoji></p>\n<p>The main reason I'm removing this is because I'm looking forward to have a more minimalistic look and feel and not because of the quality of Nerd-fonts (which is great by the way).</p>\n<p>I just think it goes in a different path from what I'm trying here.</p>\n<p>Also, you've been doing an excellent job with it, congrats buddy <g-emoji class=\"g-emoji\" alias=\"smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png\">😄</g-emoji></p>",
+                  "url":
+                    "https://github.com/lucasfcosta/dotfiles/commit/4609707fe16921971188dbbecbc91b2deec9cb93#commitcomment-21940047",
+                  "createdAt": "2017-04-27T20:49:35Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "dotfiles",
+                    "nameWithOwner": "lucasfcosta/dotfiles",
+                    "url": "https://github.com/lucasfcosta/dotfiles",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"8083459\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ryanoasis\">@ryanoasis</a> no worries, the internet has no bounds, I'm actually really happy you've shared your thoughts and tried to help me, this clearly demonstrates how dedicated you are to your project and its users.</p>\n<p>Thank you very much, all the best for you too <g-emoji class=\"g-emoji\" alias=\"smile\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png\">😄</g-emoji></p>",
+                  "url":
+                    "https://github.com/lucasfcosta/dotfiles/commit/4609707fe16921971188dbbecbc91b2deec9cb93#commitcomment-21959885",
+                  "createdAt": "2017-04-29T17:54:24Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner": "vieiralucas/dotfiles",
+                  "createdAt": "2014-10-28T14:10:09Z",
+                  "url": "https://github.com/vieiralucas/dotfiles",
+                  "description": null,
+                  "stargazers": {
+                    "totalCount": 3,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "Shell", "__typename": "Language" },
+                      { "name": "Vim script", "__typename": "Language" },
+                      { "name": "Ruby", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "twcamper/sicp-kindle",
+                  "createdAt": "2010-01-10T03:50:07Z",
+                  "url": "https://github.com/twcamper/sicp-kindle",
+                  "description":
+                    "Structure and Interpretation of Computer Programs, 2nd Edition, by  Harold Abelson and Gerald Jay Sussman with Julie Sussman, The MIT Press.\nformatted and built for mobi/kindle",
+                  "stargazers": {
+                    "totalCount": 845,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "Ruby", "__typename": "Language" },
+                      { "name": "CSS", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "benji6/church",
+                  "createdAt": "2015-12-12T07:39:36Z",
+                  "url": "https://github.com/benji6/church",
+                  "description": ":church: Church Encoding in JS",
+                  "stargazers": {
+                    "totalCount": 57,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          },
+          {
+            "login": "vieiralucas",
+            "name": "Lucas Vieira",
+            "avatarUrl": "https://avatars0.githubusercontent.com/u/7764293?v=4",
+            "watching": {
+              "nodes": [
+                {
+                  "description":
+                    "Monad-ts is a small library implements some of key monads and way to chain them in a flow (pipe) in JavaScript and TypeScript.",
+                  "url": "https://github.com/vieiralucas/monad-ts",
+                  "nameWithOwner": "vieiralucas/monad-ts",
+                  "createdAt": "2018-06-22T16:52:31Z",
+                  "__typename": "Repository"
+                },
+                {
+                  "description": "Knex Documentation Builder",
+                  "url": "https://github.com/vieiralucas/documentation",
+                  "nameWithOwner": "vieiralucas/documentation",
+                  "createdAt": "2018-08-01T18:23:23Z",
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "RepositoryConnection"
+            },
+            "issueComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "nvm",
+                    "nameWithOwner": "creationix/nvm",
+                    "url": "https://github.com/creationix/nvm",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 1277,
+                    "title": "NVM getting very slow on startup in Bash",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"3936773\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eloytoro\">@eloytoro</a> I'm lazy loading <code>nvm</code> using <a href=\"http://broken-by.me/lazy-load-nvm/\" rel=\"nofollow\">this</a>.<br>\nMight be a good workaround for you <g-emoji class=\"g-emoji\" alias=\"smile_cat\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f638.png\">😸</g-emoji></p>",
+                  "url":
+                    "https://github.com/creationix/nvm/issues/1277#issuecomment-394186011",
+                  "createdAt": "2018-06-03T19:41:27Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "react-native-paper",
+                    "nameWithOwner": "callstack/react-native-paper",
+                    "url": "https://github.com/callstack/react-native-paper",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 447,
+                    "title": "Any plans for adding the Tabs component?",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML":
+                    "<p><a class=\"user-mention\" data-hovercard-user-id=\"1174278\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/satya164\">@satya164</a> That's perfect!</p>\n<p>Thank you!</p>",
+                  "url":
+                    "https://github.com/callstack/react-native-paper/issues/447#issuecomment-403881313",
+                  "createdAt": "2018-07-10T16:16:49Z",
+                  "__typename": "IssueComment"
+                },
+                {
+                  "repository": {
+                    "name": "react-native-fs",
+                    "nameWithOwner": "itinance/react-native-fs",
+                    "url": "https://github.com/itinance/react-native-fs",
+                    "__typename": "Repository"
+                  },
+                  "issue": {
+                    "number": 519,
+                    "title": "updated compilesdkversion and buildtoolsversion",
+                    "__typename": "Issue"
+                  },
+                  "bodyHTML": "<p>How long till this makes to npm?</p>",
+                  "url":
+                    "https://github.com/itinance/react-native-fs/pull/519#issuecomment-408966160",
+                  "createdAt": "2018-07-30T18:35:55Z",
+                  "__typename": "IssueComment"
+                }
+              ],
+              "__typename": "IssueCommentConnection"
+            },
+            "pullRequests": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "vim-prettier",
+                    "nameWithOwner": "prettier/vim-prettier",
+                    "url": "https://github.com/prettier/vim-prettier",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p><strong>Summary</strong></p>\n<p>The example that shows how to enable <code>vim-prettier</code> for all files had a comment about only enabling it for supported files (looks like it was copy and pasted from the previous example).</p>\n<p><strong>Test Plan</strong></p>\n<p>Not needed</p>",
+                  "url": "https://github.com/prettier/vim-prettier/pull/139",
+                  "number": 139,
+                  "createdAt": "2018-06-05T20:24:16Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "monad-ts",
+                    "nameWithOwner": "sash-ua/monad-ts",
+                    "url": "https://github.com/sash-ua/monad-ts",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url": "https://github.com/sash-ua/monad-ts/pull/1",
+                  "number": 1,
+                  "createdAt": "2018-06-22T16:57:13Z",
+                  "__typename": "PullRequest"
+                },
+                {
+                  "repository": {
+                    "name": "documentation",
+                    "nameWithOwner": "knex/documentation",
+                    "url": "https://github.com/knex/documentation",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "",
+                  "url": "https://github.com/knex/documentation/pull/125",
+                  "number": 125,
+                  "createdAt": "2018-08-01T18:29:23Z",
+                  "__typename": "PullRequest"
+                }
+              ],
+              "__typename": "PullRequestConnection"
+            },
+            "commitComments": {
+              "nodes": [
+                {
+                  "repository": {
+                    "name": "dotfiles",
+                    "nameWithOwner": "lucasfcosta/dotfiles",
+                    "url": "https://github.com/lucasfcosta/dotfiles",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML": "<p>lol</p>",
+                  "url":
+                    "https://github.com/lucasfcosta/dotfiles/commit/348511618c80c897b102a775816f7e78bbdf229b#commitcomment-19236498",
+                  "createdAt": "2016-09-30T05:38:21Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "bsodmike-billing-task",
+                    "nameWithOwner": "bsodmike/bsodmike-billing-task",
+                    "url": "https://github.com/bsodmike/bsodmike-billing-task",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>You're still missing a return<br>\nAlso, if you use the <code>done</code> callback you need to call it with the error so mocha knows that the test failed.</p>\n<p>Your code could be</p>\n<p>using done:</p>\n<div class=\"highlight highlight-source-js\"><pre><span class=\"pl-en\">it</span>(<span class=\"pl-s\"><span class=\"pl-pds\">'</span>it should retrieve list of charges and verify the amounts<span class=\"pl-pds\">'</span></span>, (<span class=\"pl-smi\">done</span>) <span class=\"pl-k\">=&gt;</span> {\n  <span class=\"pl-k\">const</span> <span class=\"pl-c1\">charges</span> <span class=\"pl-k\">=</span> [<span class=\"pl-c1\">2000</span>, <span class=\"pl-c1\">2500</span>, <span class=\"pl-c1\">500</span>];\n  <span class=\"pl-k\">const</span> <span class=\"pl-c1\">charge</span> <span class=\"pl-k\">=</span> {\n    currency<span class=\"pl-k\">:</span> <span class=\"pl-s\"><span class=\"pl-pds\">'</span>usd<span class=\"pl-pds\">'</span></span>,\n  };\n\n  <span class=\"pl-en\">createCustomer</span>().<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-c1\">id</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">0</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">1</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">2</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">resCharge</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-c\"><span class=\"pl-c\">//</span> you need to return this promise</span>\n    <span class=\"pl-k\">return</span> <span class=\"pl-smi\">chai</span>.<span class=\"pl-en\">request</span>(server)\n      .<span class=\"pl-c1\">get</span>(<span class=\"pl-s\"><span class=\"pl-pds\">`</span>/charges?customer_id=<span class=\"pl-s1\"><span class=\"pl-pse\">${</span><span class=\"pl-smi\">resCharge</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span><span class=\"pl-pse\">}</span></span><span class=\"pl-pds\">`</span></span>)\n      .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> console.log('RESULT: %s', util.inspect(res.body));</span>\n\n        <span class=\"pl-en\">expect</span>(res).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-c1\">status</span>(<span class=\"pl-c1\">200</span>);\n        <span class=\"pl-en\">expect</span>(<span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-c1\">all</span>.<span class=\"pl-c1\">keys</span>([<span class=\"pl-s\"><span class=\"pl-pds\">'</span>customer<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>charges<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>chargesCount<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>hasMore<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>url<span class=\"pl-pds\">'</span></span>]);\n        <span class=\"pl-en\">expect</span>(<span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-en\">property</span>(<span class=\"pl-s\"><span class=\"pl-pds\">'</span>chargesCount<span class=\"pl-pds\">'</span></span>).<span class=\"pl-smi\">and</span>.<span class=\"pl-en\">eql</span>(<span class=\"pl-c1\">3</span>);\n\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> Obtain total for all charges fetched for this customer</span>\n        <span class=\"pl-k\">let</span> chargeTotal <span class=\"pl-k\">=</span> <span class=\"pl-c1\">0</span>;\n\n        <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">charges</span>.<span class=\"pl-c1\">forEach</span>((<span class=\"pl-smi\">chargeDetail</span>) <span class=\"pl-k\">=&gt;</span> {\n          chargeTotal <span class=\"pl-k\">+=</span> <span class=\"pl-c1\">parseInt</span>(<span class=\"pl-smi\">chargeDetail</span>.<span class=\"pl-smi\">amount</span>, <span class=\"pl-c1\">10</span>);\n        });\n\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> Assert obtained charge total matches the expectation.</span>\n        <span class=\"pl-k\">const</span> <span class=\"pl-c1\">expectedTotal</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">charges</span>.<span class=\"pl-en\">reduce</span>((<span class=\"pl-smi\">acc</span>, <span class=\"pl-smi\">val</span>) <span class=\"pl-k\">=&gt;</span> acc <span class=\"pl-k\">+</span> val);\n        <span class=\"pl-en\">expect</span>(chargeTotal).<span class=\"pl-smi\">to</span>.<span class=\"pl-en\">eql</span>(expectedTotal);\n\n        <span class=\"pl-en\">done</span>();\n      })\n  })\n  .<span class=\"pl-c1\">catch</span>(done);\n});</pre></div>\n<p>Returning the promise to mocha:</p>\n<div class=\"highlight highlight-source-js\"><pre><span class=\"pl-en\">it</span>(<span class=\"pl-s\"><span class=\"pl-pds\">'</span>it should retrieve list of charges and verify the amounts<span class=\"pl-pds\">'</span></span>, () <span class=\"pl-k\">=&gt;</span> {\n  <span class=\"pl-k\">const</span> <span class=\"pl-c1\">charges</span> <span class=\"pl-k\">=</span> [<span class=\"pl-c1\">2000</span>, <span class=\"pl-c1\">2500</span>, <span class=\"pl-c1\">500</span>]; <span class=\"pl-c\"><span class=\"pl-c\">//</span>                         /\\ dont need done anyomore      </span>\n  <span class=\"pl-k\">const</span> <span class=\"pl-c1\">charge</span> <span class=\"pl-k\">=</span> {\n    currency<span class=\"pl-k\">:</span> <span class=\"pl-s\"><span class=\"pl-pds\">'</span>usd<span class=\"pl-pds\">'</span></span>,\n  };\n\n  <span class=\"pl-c\"><span class=\"pl-c\">//</span> here you return the promise</span>\n  <span class=\"pl-k\">return</span> <span class=\"pl-en\">createCustomer</span>().<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-c1\">id</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">0</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">1</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">customer</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span>;\n    <span class=\"pl-smi\">charge</span>.<span class=\"pl-smi\">amount</span> <span class=\"pl-k\">=</span> charges[<span class=\"pl-c1\">2</span>];\n\n    <span class=\"pl-k\">return</span> <span class=\"pl-en\">chargeCustomer</span>(charge);\n  })\n  .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">resCharge</span>) <span class=\"pl-k\">=&gt;</span> {\n    <span class=\"pl-c\"><span class=\"pl-c\">//</span> needs to return this too</span>\n    <span class=\"pl-k\">return</span> <span class=\"pl-smi\">chai</span>.<span class=\"pl-en\">request</span>(server)\n      .<span class=\"pl-c1\">get</span>(<span class=\"pl-s\"><span class=\"pl-pds\">`</span>/charges?customer_id=<span class=\"pl-s1\"><span class=\"pl-pse\">${</span><span class=\"pl-smi\">resCharge</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">customer</span><span class=\"pl-pse\">}</span></span><span class=\"pl-pds\">`</span></span>)\n      .<span class=\"pl-c1\">then</span>((<span class=\"pl-smi\">res</span>) <span class=\"pl-k\">=&gt;</span> {\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> console.log('RESULT: %s', util.inspect(res.body));</span>\n\n        <span class=\"pl-en\">expect</span>(res).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-c1\">status</span>(<span class=\"pl-c1\">200</span>);\n        <span class=\"pl-en\">expect</span>(<span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-c1\">all</span>.<span class=\"pl-c1\">keys</span>([<span class=\"pl-s\"><span class=\"pl-pds\">'</span>customer<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>charges<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>chargesCount<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>hasMore<span class=\"pl-pds\">'</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">'</span>url<span class=\"pl-pds\">'</span></span>]);\n        <span class=\"pl-en\">expect</span>(<span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>).<span class=\"pl-smi\">to</span>.<span class=\"pl-smi\">have</span>.<span class=\"pl-en\">property</span>(<span class=\"pl-s\"><span class=\"pl-pds\">'</span>chargesCount<span class=\"pl-pds\">'</span></span>).<span class=\"pl-smi\">and</span>.<span class=\"pl-en\">eql</span>(<span class=\"pl-c1\">3</span>);\n\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> Obtain total for all charges fetched for this customer</span>\n        <span class=\"pl-k\">let</span> chargeTotal <span class=\"pl-k\">=</span> <span class=\"pl-c1\">0</span>;\n\n        <span class=\"pl-smi\">res</span>.<span class=\"pl-c1\">body</span>.<span class=\"pl-smi\">charges</span>.<span class=\"pl-c1\">forEach</span>((<span class=\"pl-smi\">chargeDetail</span>) <span class=\"pl-k\">=&gt;</span> {\n          chargeTotal <span class=\"pl-k\">+=</span> <span class=\"pl-c1\">parseInt</span>(<span class=\"pl-smi\">chargeDetail</span>.<span class=\"pl-smi\">amount</span>, <span class=\"pl-c1\">10</span>);\n        });\n\n        <span class=\"pl-c\"><span class=\"pl-c\">//</span> Assert obtained charge total matches the expectation.</span>\n        <span class=\"pl-k\">const</span> <span class=\"pl-c1\">expectedTotal</span> <span class=\"pl-k\">=</span> <span class=\"pl-smi\">charges</span>.<span class=\"pl-en\">reduce</span>((<span class=\"pl-smi\">acc</span>, <span class=\"pl-smi\">val</span>) <span class=\"pl-k\">=&gt;</span> acc <span class=\"pl-k\">+</span> val);\n        <span class=\"pl-en\">expect</span>(chargeTotal).<span class=\"pl-smi\">to</span>.<span class=\"pl-en\">eql</span>(expectedTotal);\n      });\n  });\n});</pre></div>",
+                  "url":
+                    "https://github.com/bsodmike/bsodmike-billing-task/commit/171880fb41df60c102def1d849d88385639add96#commitcomment-21356688",
+                  "createdAt": "2017-03-16T17:25:10Z",
+                  "__typename": "CommitComment"
+                },
+                {
+                  "repository": {
+                    "name": "bsodmike-billing-task",
+                    "nameWithOwner": "bsodmike/bsodmike-billing-task",
+                    "url": "https://github.com/bsodmike/bsodmike-billing-task",
+                    "__typename": "Repository"
+                  },
+                  "bodyHTML":
+                    "<p>Oh yeah, I always get bitten by this linting error too <g-emoji class=\"g-emoji\" alias=\"+1\" fallback-src=\"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png\">👍</g-emoji></p>",
+                  "url":
+                    "https://github.com/bsodmike/bsodmike-billing-task/commit/171880fb41df60c102def1d849d88385639add96#commitcomment-21356837",
+                  "createdAt": "2017-03-16T17:32:00Z",
+                  "__typename": "CommitComment"
+                }
+              ],
+              "__typename": "CommitCommentConnection"
+            },
+            "starredRepositories": {
+              "nodes": [
+                {
+                  "nameWithOwner":
+                    "robwalkerco/redux-persist-filesystem-storage",
+                  "createdAt": "2017-04-10T07:55:29Z",
+                  "url":
+                    "https://github.com/robwalkerco/redux-persist-filesystem-storage",
+                  "description":
+                    "Redux persist adaptor for React Native filesystem storage",
+                  "stargazers": {
+                    "totalCount": 66,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "crankykernel/maker",
+                  "createdAt": "2018-06-23T01:12:47Z",
+                  "url": "https://github.com/crankykernel/maker",
+                  "description": "https://gitlab.com/crankykernel/maker/",
+                  "stargazers": {
+                    "totalCount": 3,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "Makefile", "__typename": "Language" },
+                      { "name": "Go", "__typename": "Language" },
+                      { "name": "TypeScript", "__typename": "Language" },
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "HTML", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                },
+                {
+                  "nameWithOwner": "facebook/react-native-fbsdk",
+                  "createdAt": "2015-08-03T17:10:14Z",
+                  "url": "https://github.com/facebook/react-native-fbsdk",
+                  "description":
+                    "A React Native wrapper around the Facebook SDKs for Android and iOS.  Provides access to Facebook login, sharing, graph requests, app events etc.",
+                  "stargazers": {
+                    "totalCount": 2039,
+                    "__typename": "StargazerConnection"
+                  },
+                  "languages": {
+                    "nodes": [
+                      { "name": "JavaScript", "__typename": "Language" },
+                      { "name": "Objective-C", "__typename": "Language" },
+                      { "name": "Java", "__typename": "Language" },
+                      { "name": "Ruby", "__typename": "Language" },
+                      { "name": "Python", "__typename": "Language" }
+                    ],
+                    "__typename": "LanguageConnection"
+                  },
+                  "__typename": "Repository"
+                }
+              ],
+              "__typename": "StarredRepositoryConnection"
+            },
+            "__typename": "User"
+          }
+        ],
+        "__typename": "FollowingConnection"
+      },
+      "__typename": "User"
+    }
+  }
+}

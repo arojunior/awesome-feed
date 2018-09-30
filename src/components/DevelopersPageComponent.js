@@ -16,8 +16,7 @@ const DevelopersPageComponent = ({ users }) => (
               <a href={url} target="_blank">
                 {username}
               </a>
-              {` `}
-              /{` `}
+              {` `}/{` `}
               <a href={repo.url} target="_blank">
                 {repo.name}
               </a>

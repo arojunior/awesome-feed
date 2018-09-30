@@ -20,4 +20,5 @@ render(
   document.getElementById(`root`),
 );
 
+moment.locale(window.navigator.userLanguage || window.navigator.language);
 moment.tz.setDefault(moment.tz.guess());

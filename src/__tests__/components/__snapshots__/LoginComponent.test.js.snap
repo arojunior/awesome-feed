@@ -13,7 +13,7 @@ exports[`LoginComponent Snapshot 1`] = `
     <p>
       <input
         className="form-control"
-        onChange={[Function]}
+        onChange={[MockFunction]}
         placeholder="Username"
         type="email"
       />
@@ -21,8 +21,8 @@ exports[`LoginComponent Snapshot 1`] = `
     <p>
       <a
         className="btn btn-primary btn-lg"
-        onClick={[Function]}
-        onKeyPress={[Function]}
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
         role="button"
         tabIndex={0}
       >

@@ -4,7 +4,12 @@ import LoginComponent from '../../components/LoginComponent';
 
 describe(`LoginComponent`, () => {
   test(`Snapshot`, () => {
-    const props = { setGithubLogin: jest.fn(), handleChange: jest.fn(), onKeyPress: jest.fn() };
+    const props = {
+      setGithubLogin: jest.fn(),
+      handleChange: jest.fn(),
+      onKeyPress: jest.fn(),
+      loginRequest: ``,
+    };
     const wrapper = shallow(<LoginComponent {...props} />);
     expect(wrapper).toMatchSnapshot();
   });

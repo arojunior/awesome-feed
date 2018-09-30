@@ -46,6 +46,16 @@ describe(`LoginContainer`, () => {
   test(`Username store state change with button click`, () => {
     Component.find(`a[role="button"]`).simulate(`click`);
     wrapper.update();
-    expect(store.getState().Login.username).toBe(`arojunior`);
+    expect(store.getState().Login.username).toBeNull();
+  });
+
+  test(`Loading state`, () => {
+    Component.props().handleChange({
+      currentTarget: { value: `arojunior` },
+    });
+    wrapper.update();
+    Component.find(`a[role="button"]`).simulate(`click`);
+    wrapper.update();
+    expect(wrapper.find(LoginComponent).props().loginRequest).toBe(`Loading...`);
   });
 });

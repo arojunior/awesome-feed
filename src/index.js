@@ -7,7 +7,7 @@ import moment from 'moment-timezone';
 import store from './modules';
 import apolloClient from './services/apolloClient';
 import App from './containers/HomeContainer';
-import 'assets/App.css';
+import './assets/App.css';
 
 render(
   <Provider store={store}>

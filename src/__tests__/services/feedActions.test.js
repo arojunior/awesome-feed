@@ -1,4 +1,4 @@
-import transformDataForFeed from 'services/feedActions';
+import transformDataForFeed from '../../services/feedActions';
 import feed from '../fixtures/feed.json';
 import feedOrganized from '../fixtures/feedOrganized.json';
 

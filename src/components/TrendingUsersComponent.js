@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import GithubLogo from 'assets/img/GitHub-Logo-Web-Development-Community.png';
+import GithubLogo from '../assets/img/GitHub-Logo-Web-Development-Community.png';
 
 const renderTrendingUsers = users =>
   users.slice(0, 5).map(({ name, username, url, avatar }) => (

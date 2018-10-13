@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import axios from 'axios';
 import { compose, lifecycle, withHandlers, withState } from 'recompose';
-import { setUsername } from 'modules/Login/actions';
-import LoginComponent from 'components/LoginComponent';
+import { setUsername } from '../modules/Login/actions';
+import LoginComponent from '../components/LoginComponent';
 import { ENTER_KEY, API } from '../constants';
 
 const handleChange = ({ setGithubUsername }) => e => {

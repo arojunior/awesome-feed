@@ -2,10 +2,10 @@ import { compose, branch, renderComponent, renderNothing } from 'recompose';
 import { graphql } from 'react-apollo';
 import { connect } from 'react-redux';
 import { head } from 'ramda';
-import { getGithubActivity } from 'services/graphQLQuery';
-import MainFeedComponent from 'components/MainFeedComponent';
-import SpinnerComponent from 'components/SpinnerComponent';
-import ErrorComponent from 'components/ErrorComponent';
+import { getGithubActivity } from '../services/graphQLQuery';
+import MainFeedComponent from '../components/MainFeedComponent';
+import SpinnerComponent from '../components/SpinnerComponent';
+import ErrorComponent from '../components/ErrorComponent';
 
 const isLoading = ({ activity }) => activity.loading;
 const hasError = ({ activity }) => activity.error;

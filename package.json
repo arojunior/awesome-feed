@@ -76,6 +76,7 @@
     "react-redux": "^5.0.5",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.0.4",
     "recompose": "^0.28.2",
     "redux": "^4.0.0",
     "redux-actions": "^2.2.1",
@@ -84,9 +85,10 @@
     "styled-components": "^3.1.4"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts-test",
+    "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "yarn build && gh-pages -d build",
     "lint": "./node_modules/.bin/eslint src/**"

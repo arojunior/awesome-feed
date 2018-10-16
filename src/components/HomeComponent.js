@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
-import ProfileContainer from 'containers/ProfileContainer';
-import TrendingReposContainer from 'containers/TrendingReposContainer';
-import RepositoriesPageContainer from 'containers/RepositoriesPageContainer';
-import DevelopersPageContainer from 'containers/DevelopersPageContainer';
-import FeedContainer from 'containers/FeedContainer';
-import TrendingUsersContainer from 'containers/TrendingUsersContainer';
+import ProfileContainer from '../containers/ProfileContainer';
+import TrendingReposContainer from '../containers/TrendingReposContainer';
+import RepositoriesPageContainer from '../containers/RepositoriesPageContainer';
+import DevelopersPageContainer from '../containers/DevelopersPageContainer';
+import FeedContainer from '../containers/FeedContainer';
+import TrendingUsersContainer from '../containers/TrendingUsersContainer';
 import HeaderComponent from './HeaderComponent';
 
 const Container = styled.div`

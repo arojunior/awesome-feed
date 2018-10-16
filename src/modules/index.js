@@ -1,8 +1,8 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import storeSynchronize from 'redux-localstore';
-import Login from 'modules/Login/reducer';
-import Trending from 'modules/Trending/reducer';
+import Login from './Login/reducer';
+import Trending from './Trending/reducer';
 
 const rootReducer = combineReducers({
   Login,

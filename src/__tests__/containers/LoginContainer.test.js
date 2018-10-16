@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
-import store from 'modules';
-import { setUsername } from 'modules/Login/actions';
-import LoginContainer from 'containers/LoginContainer';
-import LoginComponent from 'components/LoginComponent';
+import store from '../../modules';
+import { setUsername } from '../../modules/Login/actions';
+import LoginContainer from '../../containers/LoginContainer';
+import LoginComponent from '../../components/LoginComponent';
 
 describe(`LoginContainer`, () => {
   const wrapper = mount(

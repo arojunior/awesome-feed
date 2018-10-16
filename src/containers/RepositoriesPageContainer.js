@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import { compose, branch, lifecycle, renderComponent } from 'recompose';
 import { isEmpty } from 'ramda';
 import { fetchRepositories } from '@huchenme/github-trending';
-import RepositoriesPageComponent from 'components/RepositoriesPageComponent';
-import SpinnerComponent from 'components/SpinnerComponent';
-import { setTrendingRepos } from 'modules/Trending/actions';
+import RepositoriesPageComponent from '../components/RepositoriesPageComponent';
+import SpinnerComponent from '../components/SpinnerComponent';
+import { setTrendingRepos } from '../modules/Trending/actions';
 
 const mapStateToProps = state => ({
   repos: state.Trending.repos,

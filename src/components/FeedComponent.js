@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
-import transformDataForFeed from 'services/feedActions';
+import transformDataForFeed from '../services/feedActions';
 import * as Events from './EventsComponent';
 import { GITHUB } from '../constants';
 

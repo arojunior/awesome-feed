@@ -1,5 +1,5 @@
 import gql from 'graphql-tag';
-import store from 'modules/index';
+import store from '../modules/index';
 
 const state = store.getState();
 

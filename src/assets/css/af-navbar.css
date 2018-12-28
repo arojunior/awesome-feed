@@ -1,0 +1,60 @@
+.af-navbar {
+  background-color: #fff;
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.af-navbar .container-fluid {
+  padding: 0;
+}
+
+.af-navbar .af-navbar-mobile {
+  margin-bottom: 0;
+  color: #94a3ae;
+}
+
+.af-navbar .af-navbar--nav > li > a {
+  border-bottom: 2px solid #fff;
+}
+
+.af-navbar .af-navbar--nav > li.active > a {
+  background-color: #fff;
+  color: #1E88E5;
+  border-bottom: 2px solid #1E88E5;
+}
+.af-navbar .af-navbar--nav > li.active > a:hover {
+  background-color: #fff;
+}
+.af-navbar .af-navbar--nav > li > a:hover {
+  color: #1E88E5;
+  transition: all .15s ease-in-out;
+  border-bottom: 2px solid #1E88E5;
+}
+
+.af-navbar .af-navbar--nav > li.active > a:focus {
+  background-color: #fff;
+  color: #1E88E5;
+  border-bottom: 2px solid #1E88E5;
+}
+
+@media (max-width: 768px) {
+  .af-navbar {
+    top: unset;
+    bottom: 0;
+    position: fixed;
+    border-top: 2px solid #fff;
+    box-shadow: 0px -3px 13px -3px #d6d7d9;
+  }
+  .af-navbar-mobile {
+    height: 60px;
+  }
+  .af-navbar-mobile > ul {
+    display: inline-flex;
+  }
+  .af-navbar--nav {
+    margin: 0;
+    top: -17px;
+    position: relative;
+    text-align: center;
+  }
+}

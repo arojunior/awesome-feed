@@ -69,9 +69,9 @@ const RightColumn = styled.div`
 `;
 
 const HomeComponent = ({ handleLogout }) => (
-  <Container>
+  <Container className="af-container">
     <HeaderComponent handleLogout={handleLogout} />
-    <Row>
+    <Row className="af-row">
       <LeftColumn>
         <ProfileContainer />
         <TrendingReposContainer />

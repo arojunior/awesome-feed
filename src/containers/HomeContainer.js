@@ -28,12 +28,10 @@ export default compose(
   }),
   lifecycle({
     componentDidMount() {
-      const { dispatch, token } = this.props;
-      if (!token) {
-        getToken().then(({ data }) =>  {
-          dispatch(setToken(data.token))
-        });
-      }
+      const { dispatch } = this.props;
+      getToken().then(({ data }) => {
+        dispatch(setToken(data.token));
+      });
     },
     componentWillReceiveProps(nextProps) {
       if (nextProps.username) {

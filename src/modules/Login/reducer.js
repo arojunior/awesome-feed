@@ -12,9 +12,9 @@ const initialState = defineState(defaultState)(`Login`);
 
 export default handleActions(
   {
-    [SET_TOKEN]: (state, action) => ({
+    [SET_TOKEN]: (state, { payload }) => ({
       ...state,
-      token: base64.encode(`arojunior:${action.payload.data}`),
+      token: base64.encode(`arojunior:${payload}`),
     }),
     [SET_USERNAME]: (state, action) => ({
       ...state,

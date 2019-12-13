@@ -21,20 +21,22 @@ export const Repository = card => (
     {card.description}
     <br />
     <small>
-      {card.languages.length && `[${card.languages.nodes.map(({ name }) => name).join(`, `)}]`}
+      {card.languages.length && `[${card.languages.map(({ name }) => name).join(`, `)}]`}
     </small>
   </div>
 );
 
 export const PushEvent = card => (
   <div>
-    <strong>New commits:</strong> {card.commits.map(commit => commit.message)}
+    <strong>New commit comment: </strong>[<a href={card.url} target="_blank">
+      #
+    </a>] {Parser(card.bodyHTML)}
   </div>
 );
 
 export const PullRequest = card => (
   <div>
-    <strong>Sent a PR:</strong> [
+    <strong>Sent a PR:</strong> {card.title} [
     <a href={card.url} target="_blank">
       #{card.number}
     </a>

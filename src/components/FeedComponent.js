@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
-import transformDataForFeed from '../services/feedActions';
 import * as Events from './EventsComponent';
 import { GITHUB } from '../constants';
 
-const FeedComponent = ({ activity = {} }) =>
-  transformDataForFeed(activity).map(card => (
+const FeedComponent = ({ activity: { getFeed: { activity = [] } } }) => {
+  return activity.map(card => (
     <div className="media" key={`${card.login}-${card.createdAt}`}>
       <a className="media-left" href={`${GITHUB}/${card.login}`} target="_blank">
         <img
@@ -28,11 +27,12 @@ const FeedComponent = ({ activity = {} }) =>
             </a>
           </small>
         </h4>
-        {Events[`${card.__typename}`] && Events[`${card.__typename}`](card)}
+        {Events[`${card.type}`] && Events[`${card.type}`](card)}
         <small>{moment(card.createdAt).format(`L LTS`)}</small>
       </div>
     </div>
   ));
+}
 
 FeedComponent.propTypes = {
   activity: PropTypes.shape({}).isRequired,

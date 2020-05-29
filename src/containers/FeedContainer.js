@@ -1,7 +1,6 @@
 import { compose, branch, renderComponent, renderNothing } from 'recompose';
 import { graphql } from 'react-apollo';
 import { connect } from 'react-redux';
-import { head } from 'ramda';
 import { getGithubActivity } from '../services/graphQLQuery';
 import MainFeedComponent from '../components/MainFeedComponent';
 import SpinnerComponent from '../components/SpinnerComponent';
@@ -15,28 +14,32 @@ const nonOptimalStates = states =>
   compose(...states.map(state => branch(state.when, renderComponent(state.render))));
 
 export default compose(
-  connect(),
+  connect(state => ({ username: state.Login.username })),
   graphql(getGithubActivity, {
     name: `activity`,
-    options: {
+    options: ({ username }) => ({
       variables: {
+        username,
         cursor: null,
       },
-    },
+    }),
     props: ({ activity }) => ({
       activity,
-      loadOlderMessages: () =>
-        activity.fetchMore({
+      loadOlderMessages: () => {
+        if (!activity.getFeed.hasNextPage) return null;
+
+        return activity.fetchMore({
           variables: {
-            cursor: head(activity.user.following.edges).cursor,
+            cursor: activity.getFeed.cursor,
           },
-          updateQuery(previousResult, { fetchMoreResult }) {
-            if (fetchMoreResult.user.following.nodes.length) {
+          updateQuery(previvousResult, { fetchMoreResult }) {
+            if (fetchMoreResult.getFeed) {
               return fetchMoreResult;
             }
-            return previousResult;
+            return previvousResult;
           },
-        }),
+        })
+      },
     }),
   }),
   nonOptimalStates([

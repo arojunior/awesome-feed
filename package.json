@@ -28,7 +28,7 @@
     "graphql-tag": "^2.6.1",
     "history": "^4.7.2",
     "html-react-parser": "^0.4.1",
-    "moment-timezone": "^0.5.16",
+    "moment-timezone": "^0.5.35",
     "prop-types": "^15.6.2",
     "ramda": "^0.25.0",
     "react": "^16.5.2",

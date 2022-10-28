@@ -1,5 +1,7 @@
 # Github awesome feed
 
+> :warning: **This project is no longer maintained**: Check [#85](https://github.com/arojunior/awesome-feed/issues/85) for more details
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/arojunior/awesome-feed/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/arojunior/awesome-feed/?branch=master) [![Travis Build](https://travis-ci.org/arojunior/awesome-feed.svg?branch=master)](https://travis-ci.org/arojunior/awesome-feed)
 
 [https://awesomefeed.js.org](https://awesomefeed.js.org/)

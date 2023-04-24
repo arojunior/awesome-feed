@@ -1,34 +1,348 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginComponent Snapshot 1`] = `
-<div
-  className="container"
->
-  <div
-    className="jumbotron"
-  >
-    <h1>
-      Github username
-    </h1>
-    <p>
-      <input
-        className="form-control"
-        onChange={[MockFunction]}
-        placeholder="Username"
-        type="email"
-      />
-    </p>
-    <p>
-      <a
-        className="btn btn-primary btn-lg"
-        onClick={[MockFunction]}
-        onKeyPress={[MockFunction]}
-        role="button"
-        tabIndex={0}
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginComponent
+    handleChange={[MockFunction]}
+    loginRequest=""
+    onKeyPress={[MockFunction]}
+    setGithubLogin={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="jumbotron"
       >
-        Send
-      </a>
-    </p>
-  </div>
-</div>
+        <h1>
+          Github username
+        </h1>
+        <p>
+          <input
+            className="form-control"
+            onChange={[MockFunction]}
+            placeholder="Username"
+            type="email"
+          />
+        </p>
+        <p>
+          <a
+            className="btn btn-primary btn-lg"
+            onClick={[MockFunction]}
+            onKeyPress={[MockFunction]}
+            role="button"
+            tabIndex={0}
+          >
+            Send
+          </a>
+        </p>
+        
+      </div>,
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Github username
+          </h1>,
+          <p>
+            <input
+              className="form-control"
+              onChange={[MockFunction]}
+              placeholder="Username"
+              type="email"
+            />
+          </p>,
+          <p>
+            <a
+              className="btn btn-primary btn-lg"
+              onClick={[MockFunction]}
+              onKeyPress={[MockFunction]}
+              role="button"
+              tabIndex={0}
+            >
+              Send
+            </a>
+          </p>,
+          "",
+        ],
+        "className": "jumbotron",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Github username",
+          },
+          "ref": null,
+          "rendered": "Github username",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="form-control"
+              onChange={[MockFunction]}
+              placeholder="Username"
+              type="email"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "onChange": [MockFunction],
+              "placeholder": "Username",
+              "type": "email",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="btn btn-primary btn-lg"
+              onClick={[MockFunction]}
+              onKeyPress={[MockFunction]}
+              role="button"
+              tabIndex={0}
+            >
+              Send
+            </a>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Send",
+              "className": "btn btn-primary btn-lg",
+              "onClick": [MockFunction],
+              "onKeyPress": [MockFunction],
+              "role": "button",
+              "tabIndex": 0,
+            },
+            "ref": null,
+            "rendered": "Send",
+            "type": "a",
+          },
+          "type": "p",
+        },
+        "",
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="jumbotron"
+        >
+          <h1>
+            Github username
+          </h1>
+          <p>
+            <input
+              className="form-control"
+              onChange={[MockFunction]}
+              placeholder="Username"
+              type="email"
+            />
+          </p>
+          <p>
+            <a
+              className="btn btn-primary btn-lg"
+              onClick={[MockFunction]}
+              onKeyPress={[MockFunction]}
+              role="button"
+              tabIndex={0}
+            >
+              Send
+            </a>
+          </p>
+          
+        </div>,
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Github username
+            </h1>,
+            <p>
+              <input
+                className="form-control"
+                onChange={[MockFunction]}
+                placeholder="Username"
+                type="email"
+              />
+            </p>,
+            <p>
+              <a
+                className="btn btn-primary btn-lg"
+                onClick={[MockFunction]}
+                onKeyPress={[MockFunction]}
+                role="button"
+                tabIndex={0}
+              >
+                Send
+              </a>
+            </p>,
+            "",
+          ],
+          "className": "jumbotron",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Github username",
+            },
+            "ref": null,
+            "rendered": "Github username",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="form-control"
+                onChange={[MockFunction]}
+                placeholder="Username"
+                type="email"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "form-control",
+                "onChange": [MockFunction],
+                "placeholder": "Username",
+                "type": "email",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="btn btn-primary btn-lg"
+                onClick={[MockFunction]}
+                onKeyPress={[MockFunction]}
+                role="button"
+                tabIndex={0}
+              >
+                Send
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Send",
+                "className": "btn btn-primary btn-lg",
+                "onClick": [MockFunction],
+                "onKeyPress": [MockFunction],
+                "role": "button",
+                "tabIndex": 0,
+              },
+              "ref": null,
+              "rendered": "Send",
+              "type": "a",
+            },
+            "type": "p",
+          },
+          "",
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
 `;
